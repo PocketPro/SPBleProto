@@ -7,16 +7,513 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0759191F230165009D397C /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = 8A0757F11F230165009D397C /* Android.mk */; };
+		8A07591A1F230165009D397C /* PPClubHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0757F51F230165009D397C /* PPClubHelper.m */; };
+		8A07591B1F230165009D397C /* PPCalibrationAcquisitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0757F91F230165009D397C /* PPCalibrationAcquisitionViewController.m */; };
+		8A07591C1F230165009D397C /* PPCalibrationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0757FB1F230165009D397C /* PPCalibrationController.m */; };
+		8A07591D1F230165009D397C /* ManualCalibrationPromptView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0757FD1F230165009D397C /* ManualCalibrationPromptView.xib */; };
+		8A07591E1F230165009D397C /* Calibration.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A0757FF1F230165009D397C /* Calibration.strings */; };
+		8A07591F1F230165009D397C /* arrow1_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758071F230165009D397C /* arrow1_left.png */; };
+		8A0759201F230165009D397C /* arrow1_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758081F230165009D397C /* arrow1_left@2x.png */; };
+		8A0759211F230165009D397C /* arrow1_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758091F230165009D397C /* arrow1_right.png */; };
+		8A0759221F230165009D397C /* arrow1_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07580A1F230165009D397C /* arrow1_right@2x.png */; };
+		8A0759231F230165009D397C /* blank_iron.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07580B1F230165009D397C /* blank_iron.png */; };
+		8A0759241F230165009D397C /* blank_iron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07580C1F230165009D397C /* blank_iron@2x.png */; };
+		8A0759251F230165009D397C /* blank_iron_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07580D1F230165009D397C /* blank_iron_ipad.png */; };
+		8A0759261F230165009D397C /* blank_iron_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07580E1F230165009D397C /* blank_iron_ipad@2x.png */; };
+		8A0759271F230165009D397C /* blank_putter.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07580F1F230165009D397C /* blank_putter.png */; };
+		8A0759281F230165009D397C /* blank_putter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758101F230165009D397C /* blank_putter@2x.png */; };
+		8A0759291F230165009D397C /* blank_putter_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758111F230165009D397C /* blank_putter_ipad.png */; };
+		8A07592A1F230165009D397C /* blank_putter_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758121F230165009D397C /* blank_putter_ipad@2x.png */; };
+		8A07592B1F230165009D397C /* blank_wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758131F230165009D397C /* blank_wood.png */; };
+		8A07592C1F230165009D397C /* blank_wood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758141F230165009D397C /* blank_wood@2x.png */; };
+		8A07592D1F230165009D397C /* blank_wood_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758151F230165009D397C /* blank_wood_ipad.png */; };
+		8A07592E1F230165009D397C /* blank_wood_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758161F230165009D397C /* blank_wood_ipad@2x.png */; };
+		8A07592F1F230165009D397C /* calibration_attach_35inch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758171F230165009D397C /* calibration_attach_35inch.png */; };
+		8A0759301F230165009D397C /* calibration_attach_35inch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758181F230165009D397C /* calibration_attach_35inch@2x.png */; };
+		8A0759311F230165009D397C /* calibration_attach_4inch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758191F230165009D397C /* calibration_attach_4inch.png */; };
+		8A0759321F230165009D397C /* calibration_attach_4inch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07581A1F230165009D397C /* calibration_attach_4inch@2x.png */; };
+		8A0759331F230165009D397C /* calibration_attach_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07581B1F230165009D397C /* calibration_attach_ipad.png */; };
+		8A0759341F230165009D397C /* calibration_attach_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07581C1F230165009D397C /* calibration_attach_ipad@2x.png */; };
+		8A0759351F230165009D397C /* calibration_check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07581D1F230165009D397C /* calibration_check@2x.png */; };
+		8A0759361F230165009D397C /* calibration_divider_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07581E1F230165009D397C /* calibration_divider_one.png */; };
+		8A0759371F230165009D397C /* calibration_divider_one@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07581F1F230165009D397C /* calibration_divider_one@2x.png */; };
+		8A0759381F230165009D397C /* calibration_divider_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758201F230165009D397C /* calibration_divider_question.png */; };
+		8A0759391F230165009D397C /* calibration_divider_question@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758211F230165009D397C /* calibration_divider_question@2x.png */; };
+		8A07593A1F230165009D397C /* calibration_divider_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758221F230165009D397C /* calibration_divider_three.png */; };
+		8A07593B1F230165009D397C /* calibration_divider_three@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758231F230165009D397C /* calibration_divider_three@2x.png */; };
+		8A07593C1F230165009D397C /* calibration_divider_two.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758241F230165009D397C /* calibration_divider_two.png */; };
+		8A07593D1F230165009D397C /* calibration_divider_two@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758251F230165009D397C /* calibration_divider_two@2x.png */; };
+		8A07593E1F230165009D397C /* calibration_iron.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758261F230165009D397C /* calibration_iron.png */; };
+		8A07593F1F230165009D397C /* calibration_iron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758271F230165009D397C /* calibration_iron@2x.png */; };
+		8A0759401F230165009D397C /* calibration_iron_button_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758281F230165009D397C /* calibration_iron_button_ipad.png */; };
+		8A0759411F230165009D397C /* calibration_iron_button_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758291F230165009D397C /* calibration_iron_button_ipad@2x.png */; };
+		8A0759421F230165009D397C /* calibration_leftthumb_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07582A1F230165009D397C /* calibration_leftthumb_ipad.png */; };
+		8A0759431F230165009D397C /* calibration_leftthumb_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07582B1F230165009D397C /* calibration_leftthumb_ipad@2x.png */; };
+		8A0759441F230165009D397C /* calibration_nocheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07582C1F230165009D397C /* calibration_nocheck@2x.png */; };
+		8A0759451F230165009D397C /* calibration_penciledit_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07582D1F230165009D397C /* calibration_penciledit_ipad.png */; };
+		8A0759461F230165009D397C /* calibration_penciledit_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07582E1F230165009D397C /* calibration_penciledit_ipad@2x.png */; };
+		8A0759471F230165009D397C /* calibration_putter.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07582F1F230165009D397C /* calibration_putter.png */; };
+		8A0759481F230165009D397C /* calibration_putter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758301F230165009D397C /* calibration_putter@2x.png */; };
+		8A0759491F230165009D397C /* calibration_putter_button_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758311F230165009D397C /* calibration_putter_button_ipad.png */; };
+		8A07594A1F230165009D397C /* calibration_putter_button_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758321F230165009D397C /* calibration_putter_button_ipad@2x.png */; };
+		8A07594B1F230165009D397C /* calibration_rightthumb_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758331F230165009D397C /* calibration_rightthumb_ipad.png */; };
+		8A07594C1F230165009D397C /* calibration_rightthumb_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758341F230165009D397C /* calibration_rightthumb_ipad@2x.png */; };
+		8A07594D1F230165009D397C /* calibration_wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758351F230165009D397C /* calibration_wood.png */; };
+		8A07594E1F230165009D397C /* calibration_wood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758361F230165009D397C /* calibration_wood@2x.png */; };
+		8A07594F1F230165009D397C /* calibration_wood_button_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758371F230165009D397C /* calibration_wood_button_ipad.png */; };
+		8A0759501F230165009D397C /* calibration_wood_button_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758381F230165009D397C /* calibration_wood_button_ipad@2x.png */; };
+		8A0759511F230165009D397C /* calibration_penciledit_button_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758391F230165009D397C /* calibration_penciledit_button_ipad.png */; };
+		8A0759521F230165009D397C /* calibration_penciledit_button_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07583B1F230165009D397C /* calibration_penciledit_button_ipad@2x.png */; };
+		8A0759531F230165009D397C /* editbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07583D1F230165009D397C /* editbutton.png */; };
+		8A0759541F230165009D397C /* editbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A07583E1F230165009D397C /* editbutton@2x.png */; };
+		8A0759551F230165009D397C /* man_calibration_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758431F230165009D397C /* man_calibration_button.png */; };
+		8A0759561F230165009D397C /* man_calibration_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758441F230165009D397C /* man_calibration_button@2x.png */; };
+		8A0759571F230165009D397C /* man_calibration_promptbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758451F230165009D397C /* man_calibration_promptbackground.png */; };
+		8A0759581F230165009D397C /* man_calibration_promptbackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758461F230165009D397C /* man_calibration_promptbackground@2x.png */; };
+		8A0759591F230165009D397C /* man_calibration_skypro.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758471F230165009D397C /* man_calibration_skypro.png */; };
+		8A07595A1F230165009D397C /* man_calibration_skypro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758481F230165009D397C /* man_calibration_skypro@2x.png */; };
+		8A07595B1F230165009D397C /* thumbPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758491F230165009D397C /* thumbPad@2x.png */; };
+		8A07595C1F230165009D397C /* ManualCalibrationPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A07584C1F230165009D397C /* ManualCalibrationPromptView.m */; };
+		8A07595D1F230165009D397C /* PPCalibrationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A07584E1F230165009D397C /* PPCalibrationStoryboard.storyboard */; };
+		8A07595E1F230165009D397C /* PPCalibrationStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A07584F1F230165009D397C /* PPCalibrationStoryboard_iPad.storyboard */; };
+		8A07595F1F230165009D397C /* PPCalibrationChooseClubTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758531F230165009D397C /* PPCalibrationChooseClubTypeViewController.m */; };
+		8A0759601F230165009D397C /* PPCalibrationConfirmClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758551F230165009D397C /* PPCalibrationConfirmClubViewController.m */; };
+		8A0759611F230165009D397C /* PPCalibrationInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758581F230165009D397C /* PPCalibrationInfoViewController.m */; };
+		8A0759621F230165009D397C /* PPCalibrationModifyClubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A07585A1F230165009D397C /* PPCalibrationModifyClubViewController.m */; };
+		8A0759631F230165009D397C /* PPCalibrationMotionGuideViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A07585C1F230165009D397C /* PPCalibrationMotionGuideViewController.mm */; };
+		8A0759641F230165009D397C /* PPCalibrationPrefaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A07585E1F230165009D397C /* PPCalibrationPrefaceViewController.m */; };
+		8A0759651F230165009D397C /* PPCalibrationTroublesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758601F230165009D397C /* PPCalibrationTroublesViewController.m */; };
+		8A0759661F230165009D397C /* PPCalibration3DAngle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758631F230165009D397C /* PPCalibration3DAngle.m */; };
+		8A0759671F230165009D397C /* PPCalibrationMotionFeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758651F230165009D397C /* PPCalibrationMotionFeedbackView.m */; };
+		8A0759681F230165009D397C /* PPClubSelectionScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758671F230165009D397C /* PPClubSelectionScrollView.m */; };
+		8A0759691F230165009D397C /* GolfSwingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0758691F230165009D397C /* GolfSwingKit.framework */; };
+		8A07596A1F230165009D397C /* SkyProKit.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A07586B1F230165009D397C /* SkyProKit.strings */; };
+		8A07596B1F230165009D397C /* PPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A07586D1F230165009D397C /* PPCommon.framework */; };
+		8A07596C1F230165009D397C /* PPSkyPro.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A07586F1F230165009D397C /* PPSkyPro.strings */; };
+		8A07596D1F230165009D397C /* PPNewPutt.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758781F230165009D397C /* PPNewPutt.caf */; };
+		8A07596E1F230165009D397C /* PPNewSwing.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758791F230165009D397C /* PPNewSwing.caf */; };
+		8A07596F1F230165009D397C /* PPSatelliteConnected.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8A07587A1F230165009D397C /* PPSatelliteConnected.caf */; };
+		8A0759701F230165009D397C /* PPSatelliteDisconnected.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8A07587B1F230165009D397C /* PPSatelliteDisconnected.caf */; };
+		8A0759711F230165009D397C /* PPSatelliteLowBattery.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8A07587C1F230165009D397C /* PPSatelliteLowBattery.caf */; };
+		8A0759721F230165009D397C /* PPSatelliteNeedsCalibration.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8A07587D1F230165009D397C /* PPSatelliteNeedsCalibration.caf */; };
+		8A0759731F230165009D397C /* SimulatedSwing_1.swing in Resources */ = {isa = PBXBuildFile; fileRef = 8A07587E1F230165009D397C /* SimulatedSwing_1.swing */; };
+		8A0759741F230165009D397C /* SimulatedSwing_2.swing in Resources */ = {isa = PBXBuildFile; fileRef = 8A07587F1F230165009D397C /* SimulatedSwing_2.swing */; };
+		8A0759751F230165009D397C /* SimulatedSwing_3.swing in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758801F230165009D397C /* SimulatedSwing_3.swing */; };
+		8A0759761F230165009D397C /* SimulatedSwing_4.swing in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758811F230165009D397C /* SimulatedSwing_4.swing */; };
+		8A0759771F230165009D397C /* SimulatedSwing_Putt.simswing in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758821F230165009D397C /* SimulatedSwing_Putt.simswing */; };
+		8A0759781F230165009D397C /* PPEventNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758861F230165009D397C /* PPEventNotificationManager.m */; };
+		8A0759791F230165009D397C /* SatelliteLibrary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758871F230165009D397C /* SatelliteLibrary.bundle */; };
+		8A07597A1F230165009D397C /* SatelliteLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0758881F230165009D397C /* SatelliteLibrary.framework */; };
+		8A07597B1F230165009D397C /* SPSensorCalibrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A07588B1F230165009D397C /* SPSensorCalibrator.m */; };
+		8A07597D1F230165009D397C /* SP3DGolfSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758921F230165009D397C /* SP3DGolfSceneController.m */; };
+		8A07597E1F230165009D397C /* CPPCalibrationGolfer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758951F230165009D397C /* CPPCalibrationGolfer.cpp */; };
+		8A07597F1F230165009D397C /* CPPGolfBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758971F230165009D397C /* CPPGolfBall.cpp */; };
+		8A0759801F230165009D397C /* CPPGolfClubModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758991F230165009D397C /* CPPGolfClubModel.cpp */; };
+		8A0759811F230165009D397C /* CPPGolfer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A07589B1F230165009D397C /* CPPGolfer.cpp */; };
+		8A0759821F230165009D397C /* CPPIronModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A07589D1F230165009D397C /* CPPIronModel.cpp */; };
+		8A0759831F230165009D397C /* CPPPutterModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A07589F1F230165009D397C /* CPPPutterModel.cpp */; };
+		8A0759841F230165009D397C /* CPPSurfaceLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758A11F230165009D397C /* CPPSurfaceLevel.cpp */; };
+		8A0759851F230165009D397C /* CPPWoodModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758A31F230165009D397C /* CPPWoodModel.cpp */; };
+		8A0759861F230165009D397C /* Calirate065.ppcollada in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758A61F230165009D397C /* Calirate065.ppcollada */; };
+		8A0759871F230165009D397C /* Calirate_Phone014.ppcollada in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758A71F230165009D397C /* Calirate_Phone014.ppcollada */; };
+		8A0759881F230165009D397C /* Calirate_Phone014_tex_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758A81F230165009D397C /* Calirate_Phone014_tex_1.png */; };
+		8A0759891F230165009D397C /* clubs_diffuse011.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758A91F230165009D397C /* clubs_diffuse011.png.png */; };
+		8A07598A1F230165009D397C /* clubs_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758AA1F230165009D397C /* clubs_texture.png */; };
+		8A07598B1F230165009D397C /* finalTerror66.ppcollada in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758AB1F230165009D397C /* finalTerror66.ppcollada */; };
+		8A07598C1F230165009D397C /* finalTerror66_tex_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758AC1F230165009D397C /* finalTerror66_tex_1.png */; };
+		8A07598D1F230165009D397C /* golfball.ppcollada in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758AD1F230165009D397C /* golfball.ppcollada */; };
+		8A07598E1F230165009D397C /* golfball_tex_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758AE1F230165009D397C /* golfball_tex_1.png */; };
+		8A07598F1F230165009D397C /* grip_001.ppcollada in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758AF1F230165009D397C /* grip_001.ppcollada */; };
+		8A0759901F230165009D397C /* iron_bones_039.ppcollada in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758B01F230165009D397C /* iron_bones_039.ppcollada */; };
+		8A0759911F230165009D397C /* putter026.ppcollada in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758B11F230165009D397C /* putter026.ppcollada */; };
+		8A0759921F230165009D397C /* wood_bones_007.ppcollada in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758B21F230165009D397C /* wood_bones_007.ppcollada */; };
+		8A0759931F230165009D397C /* cloudsBack_gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758B41F230165009D397C /* cloudsBack_gradient.png */; };
+		8A0759941F230165009D397C /* cloudsFront_gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758B51F230165009D397C /* cloudsFront_gradient.png */; };
+		8A0759951F230165009D397C /* clubs_diffuse011.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758B61F230165009D397C /* clubs_diffuse011.png */; };
+		8A0759961F230165009D397C /* clubs_diffuse6 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758B71F230165009D397C /* clubs_diffuse6 copy.png */; };
+		8A0759971F230165009D397C /* clubs_diffuse6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758B81F230165009D397C /* clubs_diffuse6.png */; };
+		8A0759981F230165009D397C /* entireTerror66.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758B91F230165009D397C /* entireTerror66.png */; };
+		8A0759991F230165009D397C /* golfballmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758BA1F230165009D397C /* golfballmap.png */; };
+		8A07599A1F230165009D397C /* GOLFCLUBtextures.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758BB1F230165009D397C /* GOLFCLUBtextures.png */; };
+		8A07599B1F230165009D397C /* Iphone5_diffuse5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758BC1F230165009D397C /* Iphone5_diffuse5.png */; };
+		8A07599C1F230166009D397C /* SphereNormalsMap5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758BD1F230165009D397C /* SphereNormalsMap5.png */; };
+		8A07599D1F230166009D397C /* TimelineAtlas.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758BE1F230165009D397C /* TimelineAtlas.png */; };
+		8A07599E1F230166009D397C /* trees4_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758BF1F230165009D397C /* trees4_back.png */; };
+		8A07599F1F230166009D397C /* trees4_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758C01F230165009D397C /* trees4_front.png */; };
+		8A0759A01F230166009D397C /* trees4_middle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758C11F230165009D397C /* trees4_middle.png */; };
+		8A0759A11F230166009D397C /* Calirate065.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758C31F230165009D397C /* Calirate065.dae */; };
+		8A0759A21F230166009D397C /* Calirate065.klr in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758C41F230165009D397C /* Calirate065.klr */; };
+		8A0759A31F230166009D397C /* Calirate065.mbin in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758C51F230165009D397C /* Calirate065.mbin */; };
+		8A0759A41F230166009D397C /* Calirate_Phone014.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758C61F230165009D397C /* Calirate_Phone014.dae */; };
+		8A0759A51F230166009D397C /* Calirate_Phone014.klr in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758C71F230165009D397C /* Calirate_Phone014.klr */; };
+		8A0759A61F230166009D397C /* Calirate_Phone014.mbin in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758C81F230165009D397C /* Calirate_Phone014.mbin */; };
+		8A0759A71F230166009D397C /* ColoredSphere7.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758C91F230165009D397C /* ColoredSphere7.dae */; };
+		8A0759A81F230166009D397C /* finalTerror19.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758CA1F230165009D397C /* finalTerror19.dae */; };
+		8A0759A91F230166009D397C /* finalTerror66.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758CB1F230165009D397C /* finalTerror66.dae */; };
+		8A0759AA1F230166009D397C /* finalTerror66.klr in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758CC1F230165009D397C /* finalTerror66.klr */; };
+		8A0759AB1F230166009D397C /* finalTerror66.mbin in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758CD1F230165009D397C /* finalTerror66.mbin */; };
+		8A0759AC1F230166009D397C /* golfball.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758CE1F230165009D397C /* golfball.dae */; };
+		8A0759AD1F230166009D397C /* golfball.klr in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758CF1F230165009D397C /* golfball.klr */; };
+		8A0759AE1F230166009D397C /* golfball.mbin in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D01F230165009D397C /* golfball.mbin */; };
+		8A0759AF1F230166009D397C /* grip_001.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D11F230165009D397C /* grip_001.dae */; };
+		8A0759B01F230166009D397C /* grip_001.klr in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D21F230165009D397C /* grip_001.klr */; };
+		8A0759B11F230166009D397C /* grip_001.mbin in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D31F230165009D397C /* grip_001.mbin */; };
+		8A0759B21F230166009D397C /* iron_bones_039.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D41F230165009D397C /* iron_bones_039.dae */; };
+		8A0759B31F230166009D397C /* iron_bones_039.klr in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D51F230165009D397C /* iron_bones_039.klr */; };
+		8A0759B41F230166009D397C /* iron_bones_039.mbin in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D61F230165009D397C /* iron_bones_039.mbin */; };
+		8A0759B51F230166009D397C /* putter026.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D71F230165009D397C /* putter026.dae */; };
+		8A0759B61F230166009D397C /* putter026.klr in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D81F230165009D397C /* putter026.klr */; };
+		8A0759B71F230166009D397C /* putter026.mbin in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758D91F230165009D397C /* putter026.mbin */; };
+		8A0759B81F230166009D397C /* wood_bones_007.dae in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758DA1F230165009D397C /* wood_bones_007.dae */; };
+		8A0759B91F230166009D397C /* wood_bones_007.klr in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758DB1F230165009D397C /* wood_bones_007.klr */; };
+		8A0759BA1F230166009D397C /* wood_bones_007.mbin in Resources */ = {isa = PBXBuildFile; fileRef = 8A0758DC1F230165009D397C /* wood_bones_007.mbin */; };
+		8A0759BB1F230166009D397C /* PPSwingTrail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758DE1F230165009D397C /* PPSwingTrail.cpp */; };
+		8A0759BC1F230166009D397C /* PPSwingTrailFull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758E01F230165009D397C /* PPSwingTrailFull.cpp */; };
+		8A0759BD1F230166009D397C /* PPSwingTrailPutt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758E21F230165009D397C /* PPSwingTrailPutt.cpp */; };
+		8A0759BE1F230166009D397C /* CSP3DAnnotationSceneElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758E51F230165009D397C /* CSP3DAnnotationSceneElement.cpp */; };
+		8A0759BF1F230166009D397C /* CSP3DCalibrationGolferSceneElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758E81F230165009D397C /* CSP3DCalibrationGolferSceneElement.mm */; };
+		8A0759C01F230166009D397C /* CSP3DClubSceneElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758EA1F230165009D397C /* CSP3DClubSceneElement.mm */; };
+		8A0759C11F230166009D397C /* CSP3DClubSceneElement_old.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758EC1F230165009D397C /* CSP3DClubSceneElement_old.mm */; };
+		8A0759C21F230166009D397C /* CSP3DGolfBallSceneElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758EE1F230165009D397C /* CSP3DGolfBallSceneElement.mm */; };
+		8A0759C31F230166009D397C /* CSP3DGolferSceneElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758F01F230165009D397C /* CSP3DGolferSceneElement.mm */; };
+		8A0759C41F230166009D397C /* CSP3DStaticClubSceneElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758F21F230165009D397C /* CSP3DStaticClubSceneElement.mm */; };
+		8A0759C51F230166009D397C /* CSP3DSwingTrailSceneElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758F31F230165009D397C /* CSP3DSwingTrailSceneElement.cpp */; };
+		8A0759C61F230166009D397C /* SP3DAnnotationSceneElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758F61F230165009D397C /* SP3DAnnotationSceneElement.m */; };
+		8A0759C71F230166009D397C /* SP3DPlaneAnnotationSceneElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758F81F230165009D397C /* SP3DPlaneAnnotationSceneElement.m */; };
+		8A0759C81F230166009D397C /* SP3DSceneElementWrappers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758FA1F230165009D397C /* SP3DSceneElementWrappers.mm */; };
+		8A0759C91F230166009D397C /* CSP3DGolfSceneEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758FC1F230165009D397C /* CSP3DGolfSceneEnvironment.cpp */; };
+		8A0759CA1F230166009D397C /* SP3DGolfSceneEnvironment.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A0758FF1F230165009D397C /* SP3DGolfSceneEnvironment.mm */; };
+		8A0759CB1F230166009D397C /* BillboardShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759011F230165009D397C /* BillboardShader.fsh */; };
+		8A0759CC1F230166009D397C /* BillboardShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759021F230165009D397C /* BillboardShader.vsh */; };
+		8A0759CD1F230166009D397C /* SimpleColladaShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759031F230165009D397C /* SimpleColladaShader.fsh */; };
+		8A0759CE1F230166009D397C /* SimpleColladaShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759041F230165009D397C /* SimpleColladaShader.vsh */; };
+		8A0759CF1F230166009D397C /* SimpleColladaShaderNoTex.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759051F230165009D397C /* SimpleColladaShaderNoTex.fsh */; };
+		8A0759D01F230166009D397C /* SimpleColladaShaderNoTex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759061F230165009D397C /* SimpleColladaShaderNoTex.vsh */; };
+		8A0759D11F230166009D397C /* SimpleColorShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759071F230165009D397C /* SimpleColorShader.fsh */; };
+		8A0759D21F230166009D397C /* SimpleColorShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759081F230165009D397C /* SimpleColorShader.vsh */; };
+		8A0759D31F230166009D397C /* SwingTrailShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759091F230165009D397C /* SwingTrailShader.fsh */; };
+		8A0759D41F230166009D397C /* SwingTrailShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A07590A1F230165009D397C /* SwingTrailShader.vsh */; };
+		8A0759D51F230166009D397C /* SwingTrailStreakShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A07590B1F230165009D397C /* SwingTrailStreakShader.fsh */; };
+		8A0759D61F230166009D397C /* SwingTrailStreakShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A07590C1F230165009D397C /* SwingTrailStreakShader.vsh */; };
+		8A0759D71F230166009D397C /* TextureKernel5Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A07590D1F230165009D397C /* TextureKernel5Shader.fsh */; };
+		8A0759D81F230166009D397C /* TextureKernel5Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8A07590E1F230165009D397C /* TextureKernel5Shader.vsh */; };
+		8A0759D91F230166009D397C /* SP3D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A07590F1F230165009D397C /* SP3D.framework */; };
+		8A0759DA1F230166009D397C /* SP3DResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A0759101F230165009D397C /* SP3DResources.bundle */; };
+		8A0759DB1F230166009D397C /* CPPSerializedSwing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A0759121F230165009D397C /* CPPSerializedSwing.cpp */; };
+		8A0759DC1F230166009D397C /* PPSerializedSwing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0759151F230165009D397C /* PPSerializedSwing.m */; };
+		8A0759DD1F230166009D397C /* DeviceModelDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0759181F230165009D397C /* DeviceModelDetector.m */; };
+		8A0759E41F23038B009D397C /* Satellite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0759DF1F23038B009D397C /* Satellite.m */; };
+		8A0759E51F23038B009D397C /* Club.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0759E11F23038B009D397C /* Club.m */; };
+		8A0759E61F23038B009D397C /* Swing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0759E31F23038B009D397C /* Swing.m */; };
+		8A0759ED1F230D79009D397C /* SPPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0759EC1F230D79009D397C /* SPPeripheralManager.m */; };
+		8A0759F81F2398D6009D397C /* ControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0759F71F2398D6009D397C /* ControlsViewController.m */; };
+		8A4A298B1F213FE10054AED4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A298A1F213FE10054AED4 /* UIKit.framework */; };
+		8A4A298D1F213FE50054AED4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A298C1F213FE50054AED4 /* Foundation.framework */; };
+		8A4A298F1F213FEB0054AED4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A298E1F213FEB0054AED4 /* CoreGraphics.framework */; };
+		8A4A29911F213FF30054AED4 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A29901F213FF30054AED4 /* ExternalAccessory.framework */; };
+		8A4A29931F213FF90054AED4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A29921F213FF90054AED4 /* SystemConfiguration.framework */; };
+		8A4A29951F213FFF0054AED4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A29941F213FFF0054AED4 /* OpenGLES.framework */; };
+		8A4A29971F2140040054AED4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A29961F2140040054AED4 /* Accelerate.framework */; };
+		8A4A29991F2140090054AED4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A29981F2140090054AED4 /* QuartzCore.framework */; };
+		8A4A299B1F21400F0054AED4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A299A1F21400F0054AED4 /* CoreMotion.framework */; };
+		8A4A299D1F2140130054AED4 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4A299C1F2140130054AED4 /* GLKit.framework */; };
 		8A5713D91D21D80E000EA4F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5713D81D21D80E000EA4F9 /* main.m */; };
 		8A5713DC1D21D80E000EA4F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5713DB1D21D80E000EA4F9 /* AppDelegate.m */; };
 		8A5713DF1D21D80E000EA4F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5713DE1D21D80E000EA4F9 /* ViewController.m */; };
 		8A5713E21D21D80E000EA4F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5713E01D21D80E000EA4F9 /* Main.storyboard */; };
 		8A5713E51D21D80E000EA4F9 /* SPBLEPROTO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A5713E31D21D80E000EA4F9 /* SPBLEPROTO.xcdatamodeld */; };
-		8A5713E71D21D80E000EA4F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5713E61D21D80E000EA4F9 /* Assets.xcassets */; };
 		8A5713EA1D21D80E000EA4F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5713E81D21D80E000EA4F9 /* LaunchScreen.storyboard */; };
+		8A81830A1F23A7930046D913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8183091F23A7930046D913 /* Assets.xcassets */; };
+		8A81831B1F23A9E80046D913 /* golfer-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A8183181F23A9E80046D913 /* golfer-icon@2x.png */; };
+		8A81831C1F23A9E80046D913 /* SatelliteIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A8183191F23A9E80046D913 /* SatelliteIcon.png */; };
+		8A81831D1F23A9E80046D913 /* SatelliteIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A81831A1F23A9E80046D913 /* SatelliteIcon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A0757F11F230165009D397C /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
+		8A0757F31F230165009D397C /* PPClubForCalibrationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPClubForCalibrationProtocol.h; sourceTree = "<group>"; };
+		8A0757F41F230165009D397C /* PPClubHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPClubHelper.h; sourceTree = "<group>"; };
+		8A0757F51F230165009D397C /* PPClubHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPClubHelper.m; sourceTree = "<group>"; };
+		8A0757F81F230165009D397C /* PPCalibrationAcquisitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationAcquisitionViewController.h; sourceTree = "<group>"; };
+		8A0757F91F230165009D397C /* PPCalibrationAcquisitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibrationAcquisitionViewController.m; sourceTree = "<group>"; };
+		8A0757FA1F230165009D397C /* PPCalibrationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationController.h; sourceTree = "<group>"; };
+		8A0757FB1F230165009D397C /* PPCalibrationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibrationController.m; sourceTree = "<group>"; };
+		8A0757FE1F230165009D397C /* da */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = da; path = da.lproj/ManualCalibrationPromptView.xib; sourceTree = "<group>"; };
+		8A0758001F230165009D397C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Calibration.strings; sourceTree = "<group>"; };
+		8A0758011F230165009D397C /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/ManualCalibrationPromptView.xib; sourceTree = "<group>"; };
+		8A0758021F230165009D397C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ManualCalibrationPromptView.xib; sourceTree = "<group>"; };
+		8A0758031F230165009D397C /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/ManualCalibrationPromptView.xib; sourceTree = "<group>"; };
+		8A0758041F230165009D397C /* fi */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fi; path = fi.lproj/ManualCalibrationPromptView.xib; sourceTree = "<group>"; };
+		8A0758051F230165009D397C /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/ManualCalibrationPromptView.xib; sourceTree = "<group>"; };
+		8A0758071F230165009D397C /* arrow1_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow1_left.png; sourceTree = "<group>"; };
+		8A0758081F230165009D397C /* arrow1_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow1_left@2x.png"; sourceTree = "<group>"; };
+		8A0758091F230165009D397C /* arrow1_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow1_right.png; sourceTree = "<group>"; };
+		8A07580A1F230165009D397C /* arrow1_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow1_right@2x.png"; sourceTree = "<group>"; };
+		8A07580B1F230165009D397C /* blank_iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank_iron.png; sourceTree = "<group>"; };
+		8A07580C1F230165009D397C /* blank_iron@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank_iron@2x.png"; sourceTree = "<group>"; };
+		8A07580D1F230165009D397C /* blank_iron_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank_iron_ipad.png; sourceTree = "<group>"; };
+		8A07580E1F230165009D397C /* blank_iron_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank_iron_ipad@2x.png"; sourceTree = "<group>"; };
+		8A07580F1F230165009D397C /* blank_putter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank_putter.png; sourceTree = "<group>"; };
+		8A0758101F230165009D397C /* blank_putter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank_putter@2x.png"; sourceTree = "<group>"; };
+		8A0758111F230165009D397C /* blank_putter_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank_putter_ipad.png; sourceTree = "<group>"; };
+		8A0758121F230165009D397C /* blank_putter_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank_putter_ipad@2x.png"; sourceTree = "<group>"; };
+		8A0758131F230165009D397C /* blank_wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank_wood.png; sourceTree = "<group>"; };
+		8A0758141F230165009D397C /* blank_wood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank_wood@2x.png"; sourceTree = "<group>"; };
+		8A0758151F230165009D397C /* blank_wood_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank_wood_ipad.png; sourceTree = "<group>"; };
+		8A0758161F230165009D397C /* blank_wood_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank_wood_ipad@2x.png"; sourceTree = "<group>"; };
+		8A0758171F230165009D397C /* calibration_attach_35inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_attach_35inch.png; sourceTree = "<group>"; };
+		8A0758181F230165009D397C /* calibration_attach_35inch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_attach_35inch@2x.png"; sourceTree = "<group>"; };
+		8A0758191F230165009D397C /* calibration_attach_4inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_attach_4inch.png; sourceTree = "<group>"; };
+		8A07581A1F230165009D397C /* calibration_attach_4inch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_attach_4inch@2x.png"; sourceTree = "<group>"; };
+		8A07581B1F230165009D397C /* calibration_attach_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_attach_ipad.png; sourceTree = "<group>"; };
+		8A07581C1F230165009D397C /* calibration_attach_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_attach_ipad@2x.png"; sourceTree = "<group>"; };
+		8A07581D1F230165009D397C /* calibration_check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_check@2x.png"; sourceTree = "<group>"; };
+		8A07581E1F230165009D397C /* calibration_divider_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_divider_one.png; sourceTree = "<group>"; };
+		8A07581F1F230165009D397C /* calibration_divider_one@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_divider_one@2x.png"; sourceTree = "<group>"; };
+		8A0758201F230165009D397C /* calibration_divider_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_divider_question.png; sourceTree = "<group>"; };
+		8A0758211F230165009D397C /* calibration_divider_question@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_divider_question@2x.png"; sourceTree = "<group>"; };
+		8A0758221F230165009D397C /* calibration_divider_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_divider_three.png; sourceTree = "<group>"; };
+		8A0758231F230165009D397C /* calibration_divider_three@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_divider_three@2x.png"; sourceTree = "<group>"; };
+		8A0758241F230165009D397C /* calibration_divider_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_divider_two.png; sourceTree = "<group>"; };
+		8A0758251F230165009D397C /* calibration_divider_two@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_divider_two@2x.png"; sourceTree = "<group>"; };
+		8A0758261F230165009D397C /* calibration_iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_iron.png; sourceTree = "<group>"; };
+		8A0758271F230165009D397C /* calibration_iron@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_iron@2x.png"; sourceTree = "<group>"; };
+		8A0758281F230165009D397C /* calibration_iron_button_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_iron_button_ipad.png; sourceTree = "<group>"; };
+		8A0758291F230165009D397C /* calibration_iron_button_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_iron_button_ipad@2x.png"; sourceTree = "<group>"; };
+		8A07582A1F230165009D397C /* calibration_leftthumb_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_leftthumb_ipad.png; sourceTree = "<group>"; };
+		8A07582B1F230165009D397C /* calibration_leftthumb_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_leftthumb_ipad@2x.png"; sourceTree = "<group>"; };
+		8A07582C1F230165009D397C /* calibration_nocheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_nocheck@2x.png"; sourceTree = "<group>"; };
+		8A07582D1F230165009D397C /* calibration_penciledit_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_penciledit_ipad.png; sourceTree = "<group>"; };
+		8A07582E1F230165009D397C /* calibration_penciledit_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_penciledit_ipad@2x.png"; sourceTree = "<group>"; };
+		8A07582F1F230165009D397C /* calibration_putter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_putter.png; sourceTree = "<group>"; };
+		8A0758301F230165009D397C /* calibration_putter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_putter@2x.png"; sourceTree = "<group>"; };
+		8A0758311F230165009D397C /* calibration_putter_button_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_putter_button_ipad.png; sourceTree = "<group>"; };
+		8A0758321F230165009D397C /* calibration_putter_button_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_putter_button_ipad@2x.png"; sourceTree = "<group>"; };
+		8A0758331F230165009D397C /* calibration_rightthumb_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_rightthumb_ipad.png; sourceTree = "<group>"; };
+		8A0758341F230165009D397C /* calibration_rightthumb_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_rightthumb_ipad@2x.png"; sourceTree = "<group>"; };
+		8A0758351F230165009D397C /* calibration_wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_wood.png; sourceTree = "<group>"; };
+		8A0758361F230165009D397C /* calibration_wood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_wood@2x.png"; sourceTree = "<group>"; };
+		8A0758371F230165009D397C /* calibration_wood_button_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calibration_wood_button_ipad.png; sourceTree = "<group>"; };
+		8A0758381F230165009D397C /* calibration_wood_button_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calibration_wood_button_ipad@2x.png"; sourceTree = "<group>"; };
+		8A07583A1F230165009D397C /* de */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = de; path = de.lproj/calibration_penciledit_button_ipad.png; sourceTree = "<group>"; };
+		8A07583C1F230165009D397C /* de */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = de; path = "de.lproj/calibration_penciledit_button_ipad@2x.png"; sourceTree = "<group>"; };
+		8A07583D1F230165009D397C /* editbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editbutton.png; sourceTree = "<group>"; };
+		8A07583E1F230165009D397C /* editbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editbutton@2x.png"; sourceTree = "<group>"; };
+		8A07583F1F230165009D397C /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/calibration_penciledit_button_ipad.png; sourceTree = "<group>"; };
+		8A0758401F230165009D397C /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/calibration_penciledit_button_ipad@2x.png"; sourceTree = "<group>"; };
+		8A0758411F230165009D397C /* fr */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fr; path = fr.lproj/calibration_penciledit_button_ipad.png; sourceTree = "<group>"; };
+		8A0758421F230165009D397C /* fr */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fr; path = "fr.lproj/calibration_penciledit_button_ipad@2x.png"; sourceTree = "<group>"; };
+		8A0758431F230165009D397C /* man_calibration_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man_calibration_button.png; sourceTree = "<group>"; };
+		8A0758441F230165009D397C /* man_calibration_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man_calibration_button@2x.png"; sourceTree = "<group>"; };
+		8A0758451F230165009D397C /* man_calibration_promptbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man_calibration_promptbackground.png; sourceTree = "<group>"; };
+		8A0758461F230165009D397C /* man_calibration_promptbackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man_calibration_promptbackground@2x.png"; sourceTree = "<group>"; };
+		8A0758471F230165009D397C /* man_calibration_skypro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man_calibration_skypro.png; sourceTree = "<group>"; };
+		8A0758481F230165009D397C /* man_calibration_skypro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man_calibration_skypro@2x.png"; sourceTree = "<group>"; };
+		8A0758491F230165009D397C /* thumbPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbPad@2x.png"; sourceTree = "<group>"; };
+		8A07584A1F230165009D397C /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/ManualCalibrationPromptView.xib; sourceTree = "<group>"; };
+		8A07584B1F230165009D397C /* ManualCalibrationPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualCalibrationPromptView.h; sourceTree = "<group>"; };
+		8A07584C1F230165009D397C /* ManualCalibrationPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualCalibrationPromptView.m; sourceTree = "<group>"; };
+		8A07584D1F230165009D397C /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nl; path = nl.lproj/ManualCalibrationPromptView.xib; sourceTree = "<group>"; };
+		8A07584E1F230165009D397C /* PPCalibrationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PPCalibrationStoryboard.storyboard; sourceTree = "<group>"; };
+		8A07584F1F230165009D397C /* PPCalibrationStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PPCalibrationStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		8A0758501F230165009D397C /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/ManualCalibrationPromptView.xib"; sourceTree = "<group>"; };
+		8A0758521F230165009D397C /* PPCalibrationChooseClubTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationChooseClubTypeViewController.h; sourceTree = "<group>"; };
+		8A0758531F230165009D397C /* PPCalibrationChooseClubTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibrationChooseClubTypeViewController.m; sourceTree = "<group>"; };
+		8A0758541F230165009D397C /* PPCalibrationConfirmClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationConfirmClubViewController.h; sourceTree = "<group>"; };
+		8A0758551F230165009D397C /* PPCalibrationConfirmClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibrationConfirmClubViewController.m; sourceTree = "<group>"; };
+		8A0758561F230165009D397C /* PPCalibrationControllerChildProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationControllerChildProtocol.h; sourceTree = "<group>"; };
+		8A0758571F230165009D397C /* PPCalibrationInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationInfoViewController.h; sourceTree = "<group>"; };
+		8A0758581F230165009D397C /* PPCalibrationInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibrationInfoViewController.m; sourceTree = "<group>"; };
+		8A0758591F230165009D397C /* PPCalibrationModifyClubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationModifyClubViewController.h; sourceTree = "<group>"; };
+		8A07585A1F230165009D397C /* PPCalibrationModifyClubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibrationModifyClubViewController.m; sourceTree = "<group>"; };
+		8A07585B1F230165009D397C /* PPCalibrationMotionGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationMotionGuideViewController.h; sourceTree = "<group>"; };
+		8A07585C1F230165009D397C /* PPCalibrationMotionGuideViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PPCalibrationMotionGuideViewController.mm; sourceTree = "<group>"; };
+		8A07585D1F230165009D397C /* PPCalibrationPrefaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationPrefaceViewController.h; sourceTree = "<group>"; };
+		8A07585E1F230165009D397C /* PPCalibrationPrefaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibrationPrefaceViewController.m; sourceTree = "<group>"; };
+		8A07585F1F230165009D397C /* PPCalibrationTroublesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationTroublesViewController.h; sourceTree = "<group>"; };
+		8A0758601F230165009D397C /* PPCalibrationTroublesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibrationTroublesViewController.m; sourceTree = "<group>"; };
+		8A0758621F230165009D397C /* PPCalibration3DAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibration3DAngle.h; sourceTree = "<group>"; };
+		8A0758631F230165009D397C /* PPCalibration3DAngle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibration3DAngle.m; sourceTree = "<group>"; };
+		8A0758641F230165009D397C /* PPCalibrationMotionFeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCalibrationMotionFeedbackView.h; sourceTree = "<group>"; };
+		8A0758651F230165009D397C /* PPCalibrationMotionFeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCalibrationMotionFeedbackView.m; sourceTree = "<group>"; };
+		8A0758661F230165009D397C /* PPClubSelectionScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPClubSelectionScrollView.h; sourceTree = "<group>"; };
+		8A0758671F230165009D397C /* PPClubSelectionScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPClubSelectionScrollView.m; sourceTree = "<group>"; };
+		8A0758691F230165009D397C /* GolfSwingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GolfSwingKit.framework; sourceTree = "<group>"; };
+		8A07586B1F230165009D397C /* SkyProKit.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SkyProKit.strings; sourceTree = "<group>"; };
+		8A07586D1F230165009D397C /* PPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PPCommon.framework; sourceTree = "<group>"; };
+		8A0758701F230165009D397C /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/PPSkyPro.strings; sourceTree = "<group>"; };
+		8A0758711F230165009D397C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/PPSkyPro.strings; sourceTree = "<group>"; };
+		8A0758721F230165009D397C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PPSkyPro.strings; sourceTree = "<group>"; };
+		8A0758731F230165009D397C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/PPSkyPro.strings; sourceTree = "<group>"; };
+		8A0758741F230165009D397C /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/PPSkyPro.strings; sourceTree = "<group>"; };
+		8A0758751F230165009D397C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/PPSkyPro.strings; sourceTree = "<group>"; };
+		8A0758761F230165009D397C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/PPSkyPro.strings; sourceTree = "<group>"; };
+		8A0758771F230165009D397C /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/PPSkyPro.strings; sourceTree = "<group>"; };
+		8A0758781F230165009D397C /* PPNewPutt.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PPNewPutt.caf; sourceTree = "<group>"; };
+		8A0758791F230165009D397C /* PPNewSwing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PPNewSwing.caf; sourceTree = "<group>"; };
+		8A07587A1F230165009D397C /* PPSatelliteConnected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PPSatelliteConnected.caf; sourceTree = "<group>"; };
+		8A07587B1F230165009D397C /* PPSatelliteDisconnected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PPSatelliteDisconnected.caf; sourceTree = "<group>"; };
+		8A07587C1F230165009D397C /* PPSatelliteLowBattery.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PPSatelliteLowBattery.caf; sourceTree = "<group>"; };
+		8A07587D1F230165009D397C /* PPSatelliteNeedsCalibration.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PPSatelliteNeedsCalibration.caf; sourceTree = "<group>"; };
+		8A07587E1F230165009D397C /* SimulatedSwing_1.swing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimulatedSwing_1.swing; sourceTree = "<group>"; };
+		8A07587F1F230165009D397C /* SimulatedSwing_2.swing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimulatedSwing_2.swing; sourceTree = "<group>"; };
+		8A0758801F230165009D397C /* SimulatedSwing_3.swing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimulatedSwing_3.swing; sourceTree = "<group>"; };
+		8A0758811F230165009D397C /* SimulatedSwing_4.swing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimulatedSwing_4.swing; sourceTree = "<group>"; };
+		8A0758821F230165009D397C /* SimulatedSwing_Putt.simswing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimulatedSwing_Putt.simswing; sourceTree = "<group>"; };
+		8A0758831F230165009D397C /* zh-Hans-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans-CN"; path = "zh-Hans-CN.lproj/PPSkyPro.strings"; sourceTree = "<group>"; };
+		8A0758851F230165009D397C /* PPEventNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPEventNotificationManager.h; sourceTree = "<group>"; };
+		8A0758861F230165009D397C /* PPEventNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPEventNotificationManager.m; sourceTree = "<group>"; };
+		8A0758871F230165009D397C /* SatelliteLibrary.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SatelliteLibrary.bundle; sourceTree = "<group>"; };
+		8A0758881F230165009D397C /* SatelliteLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SatelliteLibrary.framework; sourceTree = "<group>"; };
+		8A07588A1F230165009D397C /* SPSensorCalibrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSensorCalibrator.h; sourceTree = "<group>"; };
+		8A07588B1F230165009D397C /* SPSensorCalibrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSensorCalibrator.m; sourceTree = "<group>"; };
+		8A07588C1F230165009D397C /* SkyProKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyProKit.h; sourceTree = "<group>"; };
+		8A0758911F230165009D397C /* SP3DGolfSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP3DGolfSceneController.h; sourceTree = "<group>"; };
+		8A0758921F230165009D397C /* SP3DGolfSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SP3DGolfSceneController.m; sourceTree = "<group>"; };
+		8A0758951F230165009D397C /* CPPCalibrationGolfer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPCalibrationGolfer.cpp; sourceTree = "<group>"; };
+		8A0758961F230165009D397C /* CPPCalibrationGolfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPCalibrationGolfer.h; sourceTree = "<group>"; };
+		8A0758971F230165009D397C /* CPPGolfBall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPGolfBall.cpp; sourceTree = "<group>"; };
+		8A0758981F230165009D397C /* CPPGolfBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPGolfBall.h; sourceTree = "<group>"; };
+		8A0758991F230165009D397C /* CPPGolfClubModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPGolfClubModel.cpp; sourceTree = "<group>"; };
+		8A07589A1F230165009D397C /* CPPGolfClubModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPGolfClubModel.h; sourceTree = "<group>"; };
+		8A07589B1F230165009D397C /* CPPGolfer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPGolfer.cpp; sourceTree = "<group>"; };
+		8A07589C1F230165009D397C /* CPPGolfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPGolfer.h; sourceTree = "<group>"; };
+		8A07589D1F230165009D397C /* CPPIronModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPIronModel.cpp; sourceTree = "<group>"; };
+		8A07589E1F230165009D397C /* CPPIronModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPIronModel.h; sourceTree = "<group>"; };
+		8A07589F1F230165009D397C /* CPPPutterModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPPutterModel.cpp; sourceTree = "<group>"; };
+		8A0758A01F230165009D397C /* CPPPutterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPPutterModel.h; sourceTree = "<group>"; };
+		8A0758A11F230165009D397C /* CPPSurfaceLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPSurfaceLevel.cpp; sourceTree = "<group>"; };
+		8A0758A21F230165009D397C /* CPPSurfaceLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPSurfaceLevel.h; sourceTree = "<group>"; };
+		8A0758A31F230165009D397C /* CPPWoodModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPWoodModel.cpp; sourceTree = "<group>"; };
+		8A0758A41F230165009D397C /* CPPWoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPWoodModel.h; sourceTree = "<group>"; };
+		8A0758A61F230165009D397C /* Calirate065.ppcollada */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Calirate065.ppcollada; sourceTree = "<group>"; };
+		8A0758A71F230165009D397C /* Calirate_Phone014.ppcollada */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Calirate_Phone014.ppcollada; sourceTree = "<group>"; };
+		8A0758A81F230165009D397C /* Calirate_Phone014_tex_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calirate_Phone014_tex_1.png; sourceTree = "<group>"; };
+		8A0758A91F230165009D397C /* clubs_diffuse011.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clubs_diffuse011.png.png; sourceTree = "<group>"; };
+		8A0758AA1F230165009D397C /* clubs_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clubs_texture.png; sourceTree = "<group>"; };
+		8A0758AB1F230165009D397C /* finalTerror66.ppcollada */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = finalTerror66.ppcollada; sourceTree = "<group>"; };
+		8A0758AC1F230165009D397C /* finalTerror66_tex_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finalTerror66_tex_1.png; sourceTree = "<group>"; };
+		8A0758AD1F230165009D397C /* golfball.ppcollada */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = golfball.ppcollada; sourceTree = "<group>"; };
+		8A0758AE1F230165009D397C /* golfball_tex_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfball_tex_1.png; sourceTree = "<group>"; };
+		8A0758AF1F230165009D397C /* grip_001.ppcollada */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = grip_001.ppcollada; sourceTree = "<group>"; };
+		8A0758B01F230165009D397C /* iron_bones_039.ppcollada */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = iron_bones_039.ppcollada; sourceTree = "<group>"; };
+		8A0758B11F230165009D397C /* putter026.ppcollada */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = putter026.ppcollada; sourceTree = "<group>"; };
+		8A0758B21F230165009D397C /* wood_bones_007.ppcollada */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wood_bones_007.ppcollada; sourceTree = "<group>"; };
+		8A0758B41F230165009D397C /* cloudsBack_gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudsBack_gradient.png; sourceTree = "<group>"; };
+		8A0758B51F230165009D397C /* cloudsFront_gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudsFront_gradient.png; sourceTree = "<group>"; };
+		8A0758B61F230165009D397C /* clubs_diffuse011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clubs_diffuse011.png; sourceTree = "<group>"; };
+		8A0758B71F230165009D397C /* clubs_diffuse6 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clubs_diffuse6 copy.png"; sourceTree = "<group>"; };
+		8A0758B81F230165009D397C /* clubs_diffuse6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clubs_diffuse6.png; sourceTree = "<group>"; };
+		8A0758B91F230165009D397C /* entireTerror66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = entireTerror66.png; sourceTree = "<group>"; };
+		8A0758BA1F230165009D397C /* golfballmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfballmap.png; sourceTree = "<group>"; };
+		8A0758BB1F230165009D397C /* GOLFCLUBtextures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GOLFCLUBtextures.png; sourceTree = "<group>"; };
+		8A0758BC1F230165009D397C /* Iphone5_diffuse5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iphone5_diffuse5.png; sourceTree = "<group>"; };
+		8A0758BD1F230165009D397C /* SphereNormalsMap5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SphereNormalsMap5.png; sourceTree = "<group>"; };
+		8A0758BE1F230165009D397C /* TimelineAtlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimelineAtlas.png; sourceTree = "<group>"; };
+		8A0758BF1F230165009D397C /* trees4_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trees4_back.png; sourceTree = "<group>"; };
+		8A0758C01F230165009D397C /* trees4_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trees4_front.png; sourceTree = "<group>"; };
+		8A0758C11F230165009D397C /* trees4_middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trees4_middle.png; sourceTree = "<group>"; };
+		8A0758C31F230165009D397C /* Calirate065.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Calirate065.dae; sourceTree = "<group>"; };
+		8A0758C41F230165009D397C /* Calirate065.klr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Calirate065.klr; sourceTree = "<group>"; };
+		8A0758C51F230165009D397C /* Calirate065.mbin */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calirate065.mbin; sourceTree = "<group>"; };
+		8A0758C61F230165009D397C /* Calirate_Phone014.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Calirate_Phone014.dae; sourceTree = "<group>"; };
+		8A0758C71F230165009D397C /* Calirate_Phone014.klr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Calirate_Phone014.klr; sourceTree = "<group>"; };
+		8A0758C81F230165009D397C /* Calirate_Phone014.mbin */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calirate_Phone014.mbin; sourceTree = "<group>"; };
+		8A0758C91F230165009D397C /* ColoredSphere7.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = ColoredSphere7.dae; sourceTree = "<group>"; };
+		8A0758CA1F230165009D397C /* finalTerror19.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = finalTerror19.dae; sourceTree = "<group>"; };
+		8A0758CB1F230165009D397C /* finalTerror66.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = finalTerror66.dae; sourceTree = "<group>"; };
+		8A0758CC1F230165009D397C /* finalTerror66.klr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = finalTerror66.klr; sourceTree = "<group>"; };
+		8A0758CD1F230165009D397C /* finalTerror66.mbin */ = {isa = PBXFileReference; lastKnownFileType = file; path = finalTerror66.mbin; sourceTree = "<group>"; };
+		8A0758CE1F230165009D397C /* golfball.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = golfball.dae; sourceTree = "<group>"; };
+		8A0758CF1F230165009D397C /* golfball.klr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = golfball.klr; sourceTree = "<group>"; };
+		8A0758D01F230165009D397C /* golfball.mbin */ = {isa = PBXFileReference; lastKnownFileType = file; path = golfball.mbin; sourceTree = "<group>"; };
+		8A0758D11F230165009D397C /* grip_001.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = grip_001.dae; sourceTree = "<group>"; };
+		8A0758D21F230165009D397C /* grip_001.klr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = grip_001.klr; sourceTree = "<group>"; };
+		8A0758D31F230165009D397C /* grip_001.mbin */ = {isa = PBXFileReference; lastKnownFileType = file; path = grip_001.mbin; sourceTree = "<group>"; };
+		8A0758D41F230165009D397C /* iron_bones_039.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = iron_bones_039.dae; sourceTree = "<group>"; };
+		8A0758D51F230165009D397C /* iron_bones_039.klr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = iron_bones_039.klr; sourceTree = "<group>"; };
+		8A0758D61F230165009D397C /* iron_bones_039.mbin */ = {isa = PBXFileReference; lastKnownFileType = file; path = iron_bones_039.mbin; sourceTree = "<group>"; };
+		8A0758D71F230165009D397C /* putter026.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = putter026.dae; sourceTree = "<group>"; };
+		8A0758D81F230165009D397C /* putter026.klr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = putter026.klr; sourceTree = "<group>"; };
+		8A0758D91F230165009D397C /* putter026.mbin */ = {isa = PBXFileReference; lastKnownFileType = file; path = putter026.mbin; sourceTree = "<group>"; };
+		8A0758DA1F230165009D397C /* wood_bones_007.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = wood_bones_007.dae; sourceTree = "<group>"; };
+		8A0758DB1F230165009D397C /* wood_bones_007.klr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = wood_bones_007.klr; sourceTree = "<group>"; };
+		8A0758DC1F230165009D397C /* wood_bones_007.mbin */ = {isa = PBXFileReference; lastKnownFileType = file; path = wood_bones_007.mbin; sourceTree = "<group>"; };
+		8A0758DE1F230165009D397C /* PPSwingTrail.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PPSwingTrail.cpp; sourceTree = "<group>"; };
+		8A0758DF1F230165009D397C /* PPSwingTrail.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PPSwingTrail.hpp; sourceTree = "<group>"; };
+		8A0758E01F230165009D397C /* PPSwingTrailFull.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PPSwingTrailFull.cpp; sourceTree = "<group>"; };
+		8A0758E11F230165009D397C /* PPSwingTrailFull.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PPSwingTrailFull.hpp; sourceTree = "<group>"; };
+		8A0758E21F230165009D397C /* PPSwingTrailPutt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PPSwingTrailPutt.cpp; sourceTree = "<group>"; };
+		8A0758E31F230165009D397C /* PPSwingTrailPutt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PPSwingTrailPutt.hpp; sourceTree = "<group>"; };
+		8A0758E51F230165009D397C /* CSP3DAnnotationSceneElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSP3DAnnotationSceneElement.cpp; sourceTree = "<group>"; };
+		8A0758E61F230165009D397C /* CSP3DAnnotationSceneElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSP3DAnnotationSceneElement.hpp; sourceTree = "<group>"; };
+		8A0758E71F230165009D397C /* CSP3DCalibrationGolferSceneElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSP3DCalibrationGolferSceneElement.hpp; sourceTree = "<group>"; };
+		8A0758E81F230165009D397C /* CSP3DCalibrationGolferSceneElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CSP3DCalibrationGolferSceneElement.mm; sourceTree = "<group>"; };
+		8A0758E91F230165009D397C /* CSP3DClubSceneElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSP3DClubSceneElement.hpp; sourceTree = "<group>"; };
+		8A0758EA1F230165009D397C /* CSP3DClubSceneElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CSP3DClubSceneElement.mm; sourceTree = "<group>"; };
+		8A0758EB1F230165009D397C /* CSP3DClubSceneElement_old.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSP3DClubSceneElement_old.hpp; sourceTree = "<group>"; };
+		8A0758EC1F230165009D397C /* CSP3DClubSceneElement_old.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CSP3DClubSceneElement_old.mm; sourceTree = "<group>"; };
+		8A0758ED1F230165009D397C /* CSP3DGolfBallSceneElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSP3DGolfBallSceneElement.hpp; sourceTree = "<group>"; };
+		8A0758EE1F230165009D397C /* CSP3DGolfBallSceneElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CSP3DGolfBallSceneElement.mm; sourceTree = "<group>"; };
+		8A0758EF1F230165009D397C /* CSP3DGolferSceneElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSP3DGolferSceneElement.hpp; sourceTree = "<group>"; };
+		8A0758F01F230165009D397C /* CSP3DGolferSceneElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CSP3DGolferSceneElement.mm; sourceTree = "<group>"; };
+		8A0758F11F230165009D397C /* CSP3DStaticClubSceneElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSP3DStaticClubSceneElement.hpp; sourceTree = "<group>"; };
+		8A0758F21F230165009D397C /* CSP3DStaticClubSceneElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CSP3DStaticClubSceneElement.mm; sourceTree = "<group>"; };
+		8A0758F31F230165009D397C /* CSP3DSwingTrailSceneElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSP3DSwingTrailSceneElement.cpp; sourceTree = "<group>"; };
+		8A0758F41F230165009D397C /* CSP3DSwingTrailSceneElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSP3DSwingTrailSceneElement.hpp; sourceTree = "<group>"; };
+		8A0758F51F230165009D397C /* SP3DAnnotationSceneElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP3DAnnotationSceneElement.h; sourceTree = "<group>"; };
+		8A0758F61F230165009D397C /* SP3DAnnotationSceneElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SP3DAnnotationSceneElement.m; sourceTree = "<group>"; };
+		8A0758F71F230165009D397C /* SP3DPlaneAnnotationSceneElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP3DPlaneAnnotationSceneElement.h; sourceTree = "<group>"; };
+		8A0758F81F230165009D397C /* SP3DPlaneAnnotationSceneElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SP3DPlaneAnnotationSceneElement.m; sourceTree = "<group>"; };
+		8A0758F91F230165009D397C /* SP3DSceneElementWrappers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP3DSceneElementWrappers.h; sourceTree = "<group>"; };
+		8A0758FA1F230165009D397C /* SP3DSceneElementWrappers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SP3DSceneElementWrappers.mm; sourceTree = "<group>"; };
+		8A0758FC1F230165009D397C /* CSP3DGolfSceneEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSP3DGolfSceneEnvironment.cpp; sourceTree = "<group>"; };
+		8A0758FD1F230165009D397C /* CSP3DGolfSceneEnvironment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CSP3DGolfSceneEnvironment.hpp; sourceTree = "<group>"; };
+		8A0758FE1F230165009D397C /* SP3DGolfSceneEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SP3DGolfSceneEnvironment.h; sourceTree = "<group>"; };
+		8A0758FF1F230165009D397C /* SP3DGolfSceneEnvironment.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SP3DGolfSceneEnvironment.mm; sourceTree = "<group>"; };
+		8A0759011F230165009D397C /* BillboardShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BillboardShader.fsh; sourceTree = "<group>"; };
+		8A0759021F230165009D397C /* BillboardShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BillboardShader.vsh; sourceTree = "<group>"; };
+		8A0759031F230165009D397C /* SimpleColladaShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleColladaShader.fsh; sourceTree = "<group>"; };
+		8A0759041F230165009D397C /* SimpleColladaShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleColladaShader.vsh; sourceTree = "<group>"; };
+		8A0759051F230165009D397C /* SimpleColladaShaderNoTex.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleColladaShaderNoTex.fsh; sourceTree = "<group>"; };
+		8A0759061F230165009D397C /* SimpleColladaShaderNoTex.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleColladaShaderNoTex.vsh; sourceTree = "<group>"; };
+		8A0759071F230165009D397C /* SimpleColorShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleColorShader.fsh; sourceTree = "<group>"; };
+		8A0759081F230165009D397C /* SimpleColorShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SimpleColorShader.vsh; sourceTree = "<group>"; };
+		8A0759091F230165009D397C /* SwingTrailShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SwingTrailShader.fsh; sourceTree = "<group>"; };
+		8A07590A1F230165009D397C /* SwingTrailShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SwingTrailShader.vsh; sourceTree = "<group>"; };
+		8A07590B1F230165009D397C /* SwingTrailStreakShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SwingTrailStreakShader.fsh; sourceTree = "<group>"; };
+		8A07590C1F230165009D397C /* SwingTrailStreakShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SwingTrailStreakShader.vsh; sourceTree = "<group>"; };
+		8A07590D1F230165009D397C /* TextureKernel5Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureKernel5Shader.fsh; sourceTree = "<group>"; };
+		8A07590E1F230165009D397C /* TextureKernel5Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureKernel5Shader.vsh; sourceTree = "<group>"; };
+		8A07590F1F230165009D397C /* SP3D.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SP3D.framework; sourceTree = "<group>"; };
+		8A0759101F230165009D397C /* SP3DResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SP3DResources.bundle; sourceTree = "<group>"; };
+		8A0759121F230165009D397C /* CPPSerializedSwing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPPSerializedSwing.cpp; sourceTree = "<group>"; };
+		8A0759131F230165009D397C /* CPPSerializedSwing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CPPSerializedSwing.hpp; sourceTree = "<group>"; };
+		8A0759141F230165009D397C /* PPSerializedSwing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSerializedSwing.h; sourceTree = "<group>"; };
+		8A0759151F230165009D397C /* PPSerializedSwing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSerializedSwing.m; sourceTree = "<group>"; };
+		8A0759171F230165009D397C /* DeviceModelDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModelDetector.h; sourceTree = "<group>"; };
+		8A0759181F230165009D397C /* DeviceModelDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceModelDetector.m; sourceTree = "<group>"; };
+		8A0759DE1F23038B009D397C /* Satellite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Satellite.h; sourceTree = "<group>"; };
+		8A0759DF1F23038B009D397C /* Satellite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Satellite.m; sourceTree = "<group>"; };
+		8A0759E01F23038B009D397C /* Club.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Club.h; sourceTree = "<group>"; };
+		8A0759E11F23038B009D397C /* Club.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Club.m; sourceTree = "<group>"; };
+		8A0759E21F23038B009D397C /* Swing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swing.h; sourceTree = "<group>"; };
+		8A0759E31F23038B009D397C /* Swing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Swing.m; sourceTree = "<group>"; };
+		8A0759EB1F230D79009D397C /* SPPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPeripheralManager.h; sourceTree = "<group>"; };
+		8A0759EC1F230D79009D397C /* SPPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPeripheralManager.m; sourceTree = "<group>"; };
+		8A0759F61F2398D6009D397C /* ControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsViewController.h; sourceTree = "<group>"; };
+		8A0759F71F2398D6009D397C /* ControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlsViewController.m; sourceTree = "<group>"; };
+		8A4A298A1F213FE10054AED4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A4A298C1F213FE50054AED4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A4A298E1F213FEB0054AED4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A4A29901F213FF30054AED4 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		8A4A29921F213FF90054AED4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8A4A29941F213FFF0054AED4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8A4A29961F2140040054AED4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		8A4A29981F2140090054AED4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8A4A299A1F21400F0054AED4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8A4A299C1F2140130054AED4 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		8A5713D41D21D80E000EA4F9 /* SPBLEPROTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPBLEPROTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5713D81D21D80E000EA4F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A5713DA1D21D80E000EA4F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -25,9 +522,12 @@
 		8A5713DE1D21D80E000EA4F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8A5713E11D21D80E000EA4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A5713E41D21D80E000EA4F9 /* SPBLEPROTO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SPBLEPROTO.xcdatamodel; sourceTree = "<group>"; };
-		8A5713E61D21D80E000EA4F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A5713E91D21D80E000EA4F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A5713EB1D21D80E000EA4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A8183091F23A7930046D913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A8183181F23A9E80046D913 /* golfer-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "golfer-icon@2x.png"; sourceTree = "<group>"; };
+		8A8183191F23A9E80046D913 /* SatelliteIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SatelliteIcon.png; sourceTree = "<group>"; };
+		8A81831A1F23A9E80046D913 /* SatelliteIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SatelliteIcon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +535,522 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4A299D1F2140130054AED4 /* GLKit.framework in Frameworks */,
+				8A4A299B1F21400F0054AED4 /* CoreMotion.framework in Frameworks */,
+				8A4A29991F2140090054AED4 /* QuartzCore.framework in Frameworks */,
+				8A4A29971F2140040054AED4 /* Accelerate.framework in Frameworks */,
+				8A0759D91F230166009D397C /* SP3D.framework in Frameworks */,
+				8A07597A1F230165009D397C /* SatelliteLibrary.framework in Frameworks */,
+				8A4A29951F213FFF0054AED4 /* OpenGLES.framework in Frameworks */,
+				8A4A29931F213FF90054AED4 /* SystemConfiguration.framework in Frameworks */,
+				8A0759691F230165009D397C /* GolfSwingKit.framework in Frameworks */,
+				8A4A29911F213FF30054AED4 /* ExternalAccessory.framework in Frameworks */,
+				8A4A298F1F213FEB0054AED4 /* CoreGraphics.framework in Frameworks */,
+				8A4A298D1F213FE50054AED4 /* Foundation.framework in Frameworks */,
+				8A4A298B1F213FE10054AED4 /* UIKit.framework in Frameworks */,
+				8A07596B1F230165009D397C /* PPCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A0757F01F230165009D397C /* SkyProKit */ = {
+			isa = PBXGroup;
+			children = (
+				8A0757F11F230165009D397C /* Android.mk */,
+				8A0757F21F230165009D397C /* Clubs */,
+				8A0757F61F230165009D397C /* Face Normal Calibration */,
+				8A0758681F230165009D397C /* GolfSwingKit */,
+				8A07586A1F230165009D397C /* Localization */,
+				8A07586C1F230165009D397C /* PPCommon */,
+				8A07586E1F230165009D397C /* Resources */,
+				8A0758841F230165009D397C /* SatelliteLibrary */,
+				8A0758891F230165009D397C /* Sensor Calibration */,
+				8A07588C1F230165009D397C /* SkyProKit.h */,
+				8A07588D1F230165009D397C /* SP3D */,
+				8A0759111F230165009D397C /* SwingSerialization */,
+				8A0759161F230165009D397C /* Third Party */,
+			);
+			name = SkyProKit;
+			path = SkyProKit/SkyProKit;
+			sourceTree = "<group>";
+		};
+		8A0757F21F230165009D397C /* Clubs */ = {
+			isa = PBXGroup;
+			children = (
+				8A0757F31F230165009D397C /* PPClubForCalibrationProtocol.h */,
+				8A0757F41F230165009D397C /* PPClubHelper.h */,
+				8A0757F51F230165009D397C /* PPClubHelper.m */,
+			);
+			path = Clubs;
+			sourceTree = "<group>";
+		};
+		8A0757F61F230165009D397C /* Face Normal Calibration */ = {
+			isa = PBXGroup;
+			children = (
+				8A0757F71F230165009D397C /* Debugging */,
+				8A0757FA1F230165009D397C /* PPCalibrationController.h */,
+				8A0757FB1F230165009D397C /* PPCalibrationController.m */,
+				8A0757FC1F230165009D397C /* Resources */,
+				8A0758511F230165009D397C /* View Controllers */,
+				8A0758611F230165009D397C /* Views */,
+			);
+			path = "Face Normal Calibration";
+			sourceTree = "<group>";
+		};
+		8A0757F71F230165009D397C /* Debugging */ = {
+			isa = PBXGroup;
+			children = (
+				8A0757F81F230165009D397C /* PPCalibrationAcquisitionViewController.h */,
+				8A0757F91F230165009D397C /* PPCalibrationAcquisitionViewController.m */,
+			);
+			path = Debugging;
+			sourceTree = "<group>";
+		};
+		8A0757FC1F230165009D397C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A0757FD1F230165009D397C /* ManualCalibrationPromptView.xib */,
+				8A0757FF1F230165009D397C /* Calibration.strings */,
+				8A0758061F230165009D397C /* Images */,
+				8A07584B1F230165009D397C /* ManualCalibrationPromptView.h */,
+				8A07584C1F230165009D397C /* ManualCalibrationPromptView.m */,
+				8A07584E1F230165009D397C /* PPCalibrationStoryboard.storyboard */,
+				8A07584F1F230165009D397C /* PPCalibrationStoryboard_iPad.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A0758061F230165009D397C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758071F230165009D397C /* arrow1_left.png */,
+				8A0758081F230165009D397C /* arrow1_left@2x.png */,
+				8A0758091F230165009D397C /* arrow1_right.png */,
+				8A07580A1F230165009D397C /* arrow1_right@2x.png */,
+				8A07580B1F230165009D397C /* blank_iron.png */,
+				8A07580C1F230165009D397C /* blank_iron@2x.png */,
+				8A07580D1F230165009D397C /* blank_iron_ipad.png */,
+				8A07580E1F230165009D397C /* blank_iron_ipad@2x.png */,
+				8A07580F1F230165009D397C /* blank_putter.png */,
+				8A0758101F230165009D397C /* blank_putter@2x.png */,
+				8A0758111F230165009D397C /* blank_putter_ipad.png */,
+				8A0758121F230165009D397C /* blank_putter_ipad@2x.png */,
+				8A0758131F230165009D397C /* blank_wood.png */,
+				8A0758141F230165009D397C /* blank_wood@2x.png */,
+				8A0758151F230165009D397C /* blank_wood_ipad.png */,
+				8A0758161F230165009D397C /* blank_wood_ipad@2x.png */,
+				8A0758171F230165009D397C /* calibration_attach_35inch.png */,
+				8A0758181F230165009D397C /* calibration_attach_35inch@2x.png */,
+				8A0758191F230165009D397C /* calibration_attach_4inch.png */,
+				8A07581A1F230165009D397C /* calibration_attach_4inch@2x.png */,
+				8A07581B1F230165009D397C /* calibration_attach_ipad.png */,
+				8A07581C1F230165009D397C /* calibration_attach_ipad@2x.png */,
+				8A07581D1F230165009D397C /* calibration_check@2x.png */,
+				8A07581E1F230165009D397C /* calibration_divider_one.png */,
+				8A07581F1F230165009D397C /* calibration_divider_one@2x.png */,
+				8A0758201F230165009D397C /* calibration_divider_question.png */,
+				8A0758211F230165009D397C /* calibration_divider_question@2x.png */,
+				8A0758221F230165009D397C /* calibration_divider_three.png */,
+				8A0758231F230165009D397C /* calibration_divider_three@2x.png */,
+				8A0758241F230165009D397C /* calibration_divider_two.png */,
+				8A0758251F230165009D397C /* calibration_divider_two@2x.png */,
+				8A0758261F230165009D397C /* calibration_iron.png */,
+				8A0758271F230165009D397C /* calibration_iron@2x.png */,
+				8A0758281F230165009D397C /* calibration_iron_button_ipad.png */,
+				8A0758291F230165009D397C /* calibration_iron_button_ipad@2x.png */,
+				8A07582A1F230165009D397C /* calibration_leftthumb_ipad.png */,
+				8A07582B1F230165009D397C /* calibration_leftthumb_ipad@2x.png */,
+				8A07582C1F230165009D397C /* calibration_nocheck@2x.png */,
+				8A07582D1F230165009D397C /* calibration_penciledit_ipad.png */,
+				8A07582E1F230165009D397C /* calibration_penciledit_ipad@2x.png */,
+				8A07582F1F230165009D397C /* calibration_putter.png */,
+				8A0758301F230165009D397C /* calibration_putter@2x.png */,
+				8A0758311F230165009D397C /* calibration_putter_button_ipad.png */,
+				8A0758321F230165009D397C /* calibration_putter_button_ipad@2x.png */,
+				8A0758331F230165009D397C /* calibration_rightthumb_ipad.png */,
+				8A0758341F230165009D397C /* calibration_rightthumb_ipad@2x.png */,
+				8A0758351F230165009D397C /* calibration_wood.png */,
+				8A0758361F230165009D397C /* calibration_wood@2x.png */,
+				8A0758371F230165009D397C /* calibration_wood_button_ipad.png */,
+				8A0758381F230165009D397C /* calibration_wood_button_ipad@2x.png */,
+				8A0758391F230165009D397C /* calibration_penciledit_button_ipad.png */,
+				8A07583B1F230165009D397C /* calibration_penciledit_button_ipad@2x.png */,
+				8A07583D1F230165009D397C /* editbutton.png */,
+				8A07583E1F230165009D397C /* editbutton@2x.png */,
+				8A0758431F230165009D397C /* man_calibration_button.png */,
+				8A0758441F230165009D397C /* man_calibration_button@2x.png */,
+				8A0758451F230165009D397C /* man_calibration_promptbackground.png */,
+				8A0758461F230165009D397C /* man_calibration_promptbackground@2x.png */,
+				8A0758471F230165009D397C /* man_calibration_skypro.png */,
+				8A0758481F230165009D397C /* man_calibration_skypro@2x.png */,
+				8A0758491F230165009D397C /* thumbPad@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8A0758511F230165009D397C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758521F230165009D397C /* PPCalibrationChooseClubTypeViewController.h */,
+				8A0758531F230165009D397C /* PPCalibrationChooseClubTypeViewController.m */,
+				8A0758541F230165009D397C /* PPCalibrationConfirmClubViewController.h */,
+				8A0758551F230165009D397C /* PPCalibrationConfirmClubViewController.m */,
+				8A0758561F230165009D397C /* PPCalibrationControllerChildProtocol.h */,
+				8A0758571F230165009D397C /* PPCalibrationInfoViewController.h */,
+				8A0758581F230165009D397C /* PPCalibrationInfoViewController.m */,
+				8A0758591F230165009D397C /* PPCalibrationModifyClubViewController.h */,
+				8A07585A1F230165009D397C /* PPCalibrationModifyClubViewController.m */,
+				8A07585B1F230165009D397C /* PPCalibrationMotionGuideViewController.h */,
+				8A07585C1F230165009D397C /* PPCalibrationMotionGuideViewController.mm */,
+				8A07585D1F230165009D397C /* PPCalibrationPrefaceViewController.h */,
+				8A07585E1F230165009D397C /* PPCalibrationPrefaceViewController.m */,
+				8A07585F1F230165009D397C /* PPCalibrationTroublesViewController.h */,
+				8A0758601F230165009D397C /* PPCalibrationTroublesViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8A0758611F230165009D397C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758621F230165009D397C /* PPCalibration3DAngle.h */,
+				8A0758631F230165009D397C /* PPCalibration3DAngle.m */,
+				8A0758641F230165009D397C /* PPCalibrationMotionFeedbackView.h */,
+				8A0758651F230165009D397C /* PPCalibrationMotionFeedbackView.m */,
+				8A0758661F230165009D397C /* PPClubSelectionScrollView.h */,
+				8A0758671F230165009D397C /* PPClubSelectionScrollView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A0758681F230165009D397C /* GolfSwingKit */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758691F230165009D397C /* GolfSwingKit.framework */,
+			);
+			path = GolfSwingKit;
+			sourceTree = "<group>";
+		};
+		8A07586A1F230165009D397C /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				8A07586B1F230165009D397C /* SkyProKit.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		8A07586C1F230165009D397C /* PPCommon */ = {
+			isa = PBXGroup;
+			children = (
+				8A07586D1F230165009D397C /* PPCommon.framework */,
+			);
+			path = PPCommon;
+			sourceTree = "<group>";
+		};
+		8A07586E1F230165009D397C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A07586F1F230165009D397C /* PPSkyPro.strings */,
+				8A0758781F230165009D397C /* PPNewPutt.caf */,
+				8A0758791F230165009D397C /* PPNewSwing.caf */,
+				8A07587A1F230165009D397C /* PPSatelliteConnected.caf */,
+				8A07587B1F230165009D397C /* PPSatelliteDisconnected.caf */,
+				8A07587C1F230165009D397C /* PPSatelliteLowBattery.caf */,
+				8A07587D1F230165009D397C /* PPSatelliteNeedsCalibration.caf */,
+				8A07587E1F230165009D397C /* SimulatedSwing_1.swing */,
+				8A07587F1F230165009D397C /* SimulatedSwing_2.swing */,
+				8A0758801F230165009D397C /* SimulatedSwing_3.swing */,
+				8A0758811F230165009D397C /* SimulatedSwing_4.swing */,
+				8A0758821F230165009D397C /* SimulatedSwing_Putt.simswing */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A0758841F230165009D397C /* SatelliteLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758851F230165009D397C /* PPEventNotificationManager.h */,
+				8A0758861F230165009D397C /* PPEventNotificationManager.m */,
+				8A0758871F230165009D397C /* SatelliteLibrary.bundle */,
+				8A0758881F230165009D397C /* SatelliteLibrary.framework */,
+			);
+			path = SatelliteLibrary;
+			sourceTree = "<group>";
+		};
+		8A0758891F230165009D397C /* Sensor Calibration */ = {
+			isa = PBXGroup;
+			children = (
+				8A07588A1F230165009D397C /* SPSensorCalibrator.h */,
+				8A07588B1F230165009D397C /* SPSensorCalibrator.m */,
+			);
+			path = "Sensor Calibration";
+			sourceTree = "<group>";
+		};
+		8A07588D1F230165009D397C /* SP3D */ = {
+			isa = PBXGroup;
+			children = (
+				8A07588E1F230165009D397C /* GolfSceneController */,
+				8A0758931F230165009D397C /* Models */,
+				8A0758DD1F230165009D397C /* Resources */,
+				8A0758E41F230165009D397C /* SceneElements */,
+				8A0758FB1F230165009D397C /* SceneEnvironment */,
+				8A0759001F230165009D397C /* Shaders */,
+				8A07590F1F230165009D397C /* SP3D.framework */,
+				8A0759101F230165009D397C /* SP3DResources.bundle */,
+			);
+			path = SP3D;
+			sourceTree = "<group>";
+		};
+		8A07588E1F230165009D397C /* GolfSceneController */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758911F230165009D397C /* SP3DGolfSceneController.h */,
+				8A0758921F230165009D397C /* SP3DGolfSceneController.m */,
+			);
+			path = GolfSceneController;
+			sourceTree = "<group>";
+		};
+		8A0758931F230165009D397C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758941F230165009D397C /* Classes */,
+				8A0758A51F230165009D397C /* New PPCollada Stuff */,
+				8A0758B31F230165009D397C /* Textures */,
+				8A0758C21F230165009D397C /* Vertex Data */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A0758941F230165009D397C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758951F230165009D397C /* CPPCalibrationGolfer.cpp */,
+				8A0758961F230165009D397C /* CPPCalibrationGolfer.h */,
+				8A0758971F230165009D397C /* CPPGolfBall.cpp */,
+				8A0758981F230165009D397C /* CPPGolfBall.h */,
+				8A0758991F230165009D397C /* CPPGolfClubModel.cpp */,
+				8A07589A1F230165009D397C /* CPPGolfClubModel.h */,
+				8A07589B1F230165009D397C /* CPPGolfer.cpp */,
+				8A07589C1F230165009D397C /* CPPGolfer.h */,
+				8A07589D1F230165009D397C /* CPPIronModel.cpp */,
+				8A07589E1F230165009D397C /* CPPIronModel.h */,
+				8A07589F1F230165009D397C /* CPPPutterModel.cpp */,
+				8A0758A01F230165009D397C /* CPPPutterModel.h */,
+				8A0758A11F230165009D397C /* CPPSurfaceLevel.cpp */,
+				8A0758A21F230165009D397C /* CPPSurfaceLevel.h */,
+				8A0758A31F230165009D397C /* CPPWoodModel.cpp */,
+				8A0758A41F230165009D397C /* CPPWoodModel.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8A0758A51F230165009D397C /* New PPCollada Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758A61F230165009D397C /* Calirate065.ppcollada */,
+				8A0758A71F230165009D397C /* Calirate_Phone014.ppcollada */,
+				8A0758A81F230165009D397C /* Calirate_Phone014_tex_1.png */,
+				8A0758A91F230165009D397C /* clubs_diffuse011.png.png */,
+				8A0758AA1F230165009D397C /* clubs_texture.png */,
+				8A0758AB1F230165009D397C /* finalTerror66.ppcollada */,
+				8A0758AC1F230165009D397C /* finalTerror66_tex_1.png */,
+				8A0758AD1F230165009D397C /* golfball.ppcollada */,
+				8A0758AE1F230165009D397C /* golfball_tex_1.png */,
+				8A0758AF1F230165009D397C /* grip_001.ppcollada */,
+				8A0758B01F230165009D397C /* iron_bones_039.ppcollada */,
+				8A0758B11F230165009D397C /* putter026.ppcollada */,
+				8A0758B21F230165009D397C /* wood_bones_007.ppcollada */,
+			);
+			path = "New PPCollada Stuff";
+			sourceTree = "<group>";
+		};
+		8A0758B31F230165009D397C /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758B41F230165009D397C /* cloudsBack_gradient.png */,
+				8A0758B51F230165009D397C /* cloudsFront_gradient.png */,
+				8A0758B61F230165009D397C /* clubs_diffuse011.png */,
+				8A0758B71F230165009D397C /* clubs_diffuse6 copy.png */,
+				8A0758B81F230165009D397C /* clubs_diffuse6.png */,
+				8A0758B91F230165009D397C /* entireTerror66.png */,
+				8A0758BA1F230165009D397C /* golfballmap.png */,
+				8A0758BB1F230165009D397C /* GOLFCLUBtextures.png */,
+				8A0758BC1F230165009D397C /* Iphone5_diffuse5.png */,
+				8A0758BD1F230165009D397C /* SphereNormalsMap5.png */,
+				8A0758BE1F230165009D397C /* TimelineAtlas.png */,
+				8A0758BF1F230165009D397C /* trees4_back.png */,
+				8A0758C01F230165009D397C /* trees4_front.png */,
+				8A0758C11F230165009D397C /* trees4_middle.png */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		8A0758C21F230165009D397C /* Vertex Data */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758C31F230165009D397C /* Calirate065.dae */,
+				8A0758C41F230165009D397C /* Calirate065.klr */,
+				8A0758C51F230165009D397C /* Calirate065.mbin */,
+				8A0758C61F230165009D397C /* Calirate_Phone014.dae */,
+				8A0758C71F230165009D397C /* Calirate_Phone014.klr */,
+				8A0758C81F230165009D397C /* Calirate_Phone014.mbin */,
+				8A0758C91F230165009D397C /* ColoredSphere7.dae */,
+				8A0758CA1F230165009D397C /* finalTerror19.dae */,
+				8A0758CB1F230165009D397C /* finalTerror66.dae */,
+				8A0758CC1F230165009D397C /* finalTerror66.klr */,
+				8A0758CD1F230165009D397C /* finalTerror66.mbin */,
+				8A0758CE1F230165009D397C /* golfball.dae */,
+				8A0758CF1F230165009D397C /* golfball.klr */,
+				8A0758D01F230165009D397C /* golfball.mbin */,
+				8A0758D11F230165009D397C /* grip_001.dae */,
+				8A0758D21F230165009D397C /* grip_001.klr */,
+				8A0758D31F230165009D397C /* grip_001.mbin */,
+				8A0758D41F230165009D397C /* iron_bones_039.dae */,
+				8A0758D51F230165009D397C /* iron_bones_039.klr */,
+				8A0758D61F230165009D397C /* iron_bones_039.mbin */,
+				8A0758D71F230165009D397C /* putter026.dae */,
+				8A0758D81F230165009D397C /* putter026.klr */,
+				8A0758D91F230165009D397C /* putter026.mbin */,
+				8A0758DA1F230165009D397C /* wood_bones_007.dae */,
+				8A0758DB1F230165009D397C /* wood_bones_007.klr */,
+				8A0758DC1F230165009D397C /* wood_bones_007.mbin */,
+			);
+			path = "Vertex Data";
+			sourceTree = "<group>";
+		};
+		8A0758DD1F230165009D397C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758DE1F230165009D397C /* PPSwingTrail.cpp */,
+				8A0758DF1F230165009D397C /* PPSwingTrail.hpp */,
+				8A0758E01F230165009D397C /* PPSwingTrailFull.cpp */,
+				8A0758E11F230165009D397C /* PPSwingTrailFull.hpp */,
+				8A0758E21F230165009D397C /* PPSwingTrailPutt.cpp */,
+				8A0758E31F230165009D397C /* PPSwingTrailPutt.hpp */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A0758E41F230165009D397C /* SceneElements */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758E51F230165009D397C /* CSP3DAnnotationSceneElement.cpp */,
+				8A0758E61F230165009D397C /* CSP3DAnnotationSceneElement.hpp */,
+				8A0758E71F230165009D397C /* CSP3DCalibrationGolferSceneElement.hpp */,
+				8A0758E81F230165009D397C /* CSP3DCalibrationGolferSceneElement.mm */,
+				8A0758E91F230165009D397C /* CSP3DClubSceneElement.hpp */,
+				8A0758EA1F230165009D397C /* CSP3DClubSceneElement.mm */,
+				8A0758EB1F230165009D397C /* CSP3DClubSceneElement_old.hpp */,
+				8A0758EC1F230165009D397C /* CSP3DClubSceneElement_old.mm */,
+				8A0758ED1F230165009D397C /* CSP3DGolfBallSceneElement.hpp */,
+				8A0758EE1F230165009D397C /* CSP3DGolfBallSceneElement.mm */,
+				8A0758EF1F230165009D397C /* CSP3DGolferSceneElement.hpp */,
+				8A0758F01F230165009D397C /* CSP3DGolferSceneElement.mm */,
+				8A0758F11F230165009D397C /* CSP3DStaticClubSceneElement.hpp */,
+				8A0758F21F230165009D397C /* CSP3DStaticClubSceneElement.mm */,
+				8A0758F31F230165009D397C /* CSP3DSwingTrailSceneElement.cpp */,
+				8A0758F41F230165009D397C /* CSP3DSwingTrailSceneElement.hpp */,
+				8A0758F51F230165009D397C /* SP3DAnnotationSceneElement.h */,
+				8A0758F61F230165009D397C /* SP3DAnnotationSceneElement.m */,
+				8A0758F71F230165009D397C /* SP3DPlaneAnnotationSceneElement.h */,
+				8A0758F81F230165009D397C /* SP3DPlaneAnnotationSceneElement.m */,
+				8A0758F91F230165009D397C /* SP3DSceneElementWrappers.h */,
+				8A0758FA1F230165009D397C /* SP3DSceneElementWrappers.mm */,
+			);
+			path = SceneElements;
+			sourceTree = "<group>";
+		};
+		8A0758FB1F230165009D397C /* SceneEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				8A0758FC1F230165009D397C /* CSP3DGolfSceneEnvironment.cpp */,
+				8A0758FD1F230165009D397C /* CSP3DGolfSceneEnvironment.hpp */,
+				8A0758FE1F230165009D397C /* SP3DGolfSceneEnvironment.h */,
+				8A0758FF1F230165009D397C /* SP3DGolfSceneEnvironment.mm */,
+			);
+			path = SceneEnvironment;
+			sourceTree = "<group>";
+		};
+		8A0759001F230165009D397C /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8A0759011F230165009D397C /* BillboardShader.fsh */,
+				8A0759021F230165009D397C /* BillboardShader.vsh */,
+				8A0759031F230165009D397C /* SimpleColladaShader.fsh */,
+				8A0759041F230165009D397C /* SimpleColladaShader.vsh */,
+				8A0759051F230165009D397C /* SimpleColladaShaderNoTex.fsh */,
+				8A0759061F230165009D397C /* SimpleColladaShaderNoTex.vsh */,
+				8A0759071F230165009D397C /* SimpleColorShader.fsh */,
+				8A0759081F230165009D397C /* SimpleColorShader.vsh */,
+				8A0759091F230165009D397C /* SwingTrailShader.fsh */,
+				8A07590A1F230165009D397C /* SwingTrailShader.vsh */,
+				8A07590B1F230165009D397C /* SwingTrailStreakShader.fsh */,
+				8A07590C1F230165009D397C /* SwingTrailStreakShader.vsh */,
+				8A07590D1F230165009D397C /* TextureKernel5Shader.fsh */,
+				8A07590E1F230165009D397C /* TextureKernel5Shader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		8A0759111F230165009D397C /* SwingSerialization */ = {
+			isa = PBXGroup;
+			children = (
+				8A0759121F230165009D397C /* CPPSerializedSwing.cpp */,
+				8A0759131F230165009D397C /* CPPSerializedSwing.hpp */,
+				8A0759141F230165009D397C /* PPSerializedSwing.h */,
+				8A0759151F230165009D397C /* PPSerializedSwing.m */,
+			);
+			path = SwingSerialization;
+			sourceTree = "<group>";
+		};
+		8A0759161F230165009D397C /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				8A0759171F230165009D397C /* DeviceModelDetector.h */,
+				8A0759181F230165009D397C /* DeviceModelDetector.m */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		8A0759E71F230390009D397C /* Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				8A0759DE1F23038B009D397C /* Satellite.h */,
+				8A0759DF1F23038B009D397C /* Satellite.m */,
+				8A0759E01F23038B009D397C /* Club.h */,
+				8A0759E11F23038B009D397C /* Club.m */,
+				8A0759E21F23038B009D397C /* Swing.h */,
+				8A0759E31F23038B009D397C /* Swing.m */,
+			);
+			name = "Model Layer";
+			sourceTree = "<group>";
+		};
+		8A4A29891F213FE10054AED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A4A299C1F2140130054AED4 /* GLKit.framework */,
+				8A4A299A1F21400F0054AED4 /* CoreMotion.framework */,
+				8A4A29981F2140090054AED4 /* QuartzCore.framework */,
+				8A4A29961F2140040054AED4 /* Accelerate.framework */,
+				8A4A29941F213FFF0054AED4 /* OpenGLES.framework */,
+				8A4A29921F213FF90054AED4 /* SystemConfiguration.framework */,
+				8A4A29901F213FF30054AED4 /* ExternalAccessory.framework */,
+				8A4A298E1F213FEB0054AED4 /* CoreGraphics.framework */,
+				8A4A298C1F213FE50054AED4 /* Foundation.framework */,
+				8A4A298A1F213FE10054AED4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A5713CB1D21D80E000EA4F9 = {
 			isa = PBXGroup;
 			children = (
+				8A0757F01F230165009D397C /* SkyProKit */,
 				8A5713D61D21D80E000EA4F9 /* SPBLEPROTO */,
 				8A5713D51D21D80E000EA4F9 /* Products */,
+				8A4A29891F213FE10054AED4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,12 +1065,18 @@
 		8A5713D61D21D80E000EA4F9 /* SPBLEPROTO */ = {
 			isa = PBXGroup;
 			children = (
+				8A0759E71F230390009D397C /* Model Layer */,
 				8A5713DA1D21D80E000EA4F9 /* AppDelegate.h */,
 				8A5713DB1D21D80E000EA4F9 /* AppDelegate.m */,
 				8A5713DD1D21D80E000EA4F9 /* ViewController.h */,
 				8A5713DE1D21D80E000EA4F9 /* ViewController.m */,
+				8A0759F61F2398D6009D397C /* ControlsViewController.h */,
+				8A0759F71F2398D6009D397C /* ControlsViewController.m */,
+				8A0759EB1F230D79009D397C /* SPPeripheralManager.h */,
+				8A0759EC1F230D79009D397C /* SPPeripheralManager.m */,
 				8A5713E01D21D80E000EA4F9 /* Main.storyboard */,
-				8A5713E61D21D80E000EA4F9 /* Assets.xcassets */,
+				8A8183091F23A7930046D913 /* Assets.xcassets */,
+				8A81831E1F23A9EC0046D913 /* Images */,
 				8A5713E81D21D80E000EA4F9 /* LaunchScreen.storyboard */,
 				8A5713EB1D21D80E000EA4F9 /* Info.plist */,
 				8A5713E31D21D80E000EA4F9 /* SPBLEPROTO.xcdatamodeld */,
@@ -80,6 +1091,16 @@
 				8A5713D81D21D80E000EA4F9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A81831E1F23A9EC0046D913 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8A8183181F23A9E80046D913 /* golfer-icon@2x.png */,
+				8A8183191F23A9E80046D913 /* SatelliteIcon.png */,
+				8A81831A1F23A9E80046D913 /* SatelliteIcon@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +1145,14 @@
 			knownRegions = (
 				en,
 				Base,
+				da,
+				de,
+				es,
+				fi,
+				fr,
+				ja,
+				nl,
+				"zh-Hans-CN",
 			);
 			mainGroup = 8A5713CB1D21D80E000EA4F9;
 			productRefGroup = 8A5713D51D21D80E000EA4F9 /* Products */;
@@ -140,9 +1169,160 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A0759CB1F230166009D397C /* BillboardShader.fsh in Resources */,
+				8A0759531F230165009D397C /* editbutton.png in Resources */,
+				8A07599A1F230165009D397C /* GOLFCLUBtextures.png in Resources */,
+				8A0759461F230165009D397C /* calibration_penciledit_ipad@2x.png in Resources */,
+				8A0759231F230165009D397C /* blank_iron.png in Resources */,
+				8A0759BA1F230166009D397C /* wood_bones_007.mbin in Resources */,
+				8A0759DA1F230166009D397C /* SP3DResources.bundle in Resources */,
+				8A0759AE1F230166009D397C /* golfball.mbin in Resources */,
+				8A0759551F230165009D397C /* man_calibration_button.png in Resources */,
+				8A0759311F230165009D397C /* calibration_attach_4inch.png in Resources */,
+				8A07598D1F230165009D397C /* golfball.ppcollada in Resources */,
+				8A0759981F230165009D397C /* entireTerror66.png in Resources */,
+				8A07596A1F230165009D397C /* SkyProKit.strings in Resources */,
+				8A07593D1F230165009D397C /* calibration_divider_two@2x.png in Resources */,
+				8A07599B1F230165009D397C /* Iphone5_diffuse5.png in Resources */,
+				8A0759211F230165009D397C /* arrow1_right.png in Resources */,
+				8A07595B1F230165009D397C /* thumbPad@2x.png in Resources */,
+				8A07599E1F230166009D397C /* trees4_back.png in Resources */,
+				8A0759971F230165009D397C /* clubs_diffuse6.png in Resources */,
+				8A0759401F230165009D397C /* calibration_iron_button_ipad.png in Resources */,
+				8A0759581F230165009D397C /* man_calibration_promptbackground@2x.png in Resources */,
+				8A0759A81F230166009D397C /* finalTerror19.dae in Resources */,
+				8A0759B21F230166009D397C /* iron_bones_039.dae in Resources */,
+				8A07598E1F230165009D397C /* golfball_tex_1.png in Resources */,
+				8A0759351F230165009D397C /* calibration_check@2x.png in Resources */,
+				8A0759721F230165009D397C /* PPSatelliteNeedsCalibration.caf in Resources */,
+				8A07591F1F230165009D397C /* arrow1_left.png in Resources */,
+				8A0759751F230165009D397C /* SimulatedSwing_3.swing in Resources */,
+				8A0759571F230165009D397C /* man_calibration_promptbackground.png in Resources */,
+				8A07592D1F230165009D397C /* blank_wood_ipad.png in Resources */,
+				8A0759AC1F230166009D397C /* golfball.dae in Resources */,
+				8A0759D01F230166009D397C /* SimpleColladaShaderNoTex.vsh in Resources */,
+				8A07592A1F230165009D397C /* blank_putter_ipad@2x.png in Resources */,
 				8A5713EA1D21D80E000EA4F9 /* LaunchScreen.storyboard in Resources */,
-				8A5713E71D21D80E000EA4F9 /* Assets.xcassets in Resources */,
+				8A0759711F230165009D397C /* PPSatelliteLowBattery.caf in Resources */,
+				8A0759AA1F230166009D397C /* finalTerror66.klr in Resources */,
+				8A81831B1F23A9E80046D913 /* golfer-icon@2x.png in Resources */,
+				8A07599C1F230166009D397C /* SphereNormalsMap5.png in Resources */,
+				8A0759D41F230166009D397C /* SwingTrailShader.vsh in Resources */,
+				8A0759B11F230166009D397C /* grip_001.mbin in Resources */,
+				8A07599D1F230166009D397C /* TimelineAtlas.png in Resources */,
+				8A0759331F230165009D397C /* calibration_attach_ipad.png in Resources */,
+				8A07593C1F230165009D397C /* calibration_divider_two.png in Resources */,
+				8A0759CE1F230166009D397C /* SimpleColladaShader.vsh in Resources */,
+				8A0759871F230165009D397C /* Calirate_Phone014.ppcollada in Resources */,
+				8A07594B1F230165009D397C /* calibration_rightthumb_ipad.png in Resources */,
+				8A0759B81F230166009D397C /* wood_bones_007.dae in Resources */,
+				8A0759731F230165009D397C /* SimulatedSwing_1.swing in Resources */,
+				8A0759741F230165009D397C /* SimulatedSwing_2.swing in Resources */,
+				8A07593F1F230165009D397C /* calibration_iron@2x.png in Resources */,
+				8A0759B41F230166009D397C /* iron_bones_039.mbin in Resources */,
+				8A0759A31F230166009D397C /* Calirate065.mbin in Resources */,
+				8A0759A61F230166009D397C /* Calirate_Phone014.mbin in Resources */,
+				8A0759511F230165009D397C /* calibration_penciledit_button_ipad.png in Resources */,
+				8A0759321F230165009D397C /* calibration_attach_4inch@2x.png in Resources */,
+				8A0759931F230165009D397C /* cloudsBack_gradient.png in Resources */,
+				8A0759A41F230166009D397C /* Calirate_Phone014.dae in Resources */,
+				8A0759CC1F230166009D397C /* BillboardShader.vsh in Resources */,
+				8A0759221F230165009D397C /* arrow1_right@2x.png in Resources */,
+				8A0759191F230165009D397C /* Android.mk in Resources */,
+				8A07593E1F230165009D397C /* calibration_iron.png in Resources */,
+				8A0759761F230165009D397C /* SimulatedSwing_4.swing in Resources */,
+				8A0759791F230165009D397C /* SatelliteLibrary.bundle in Resources */,
+				8A0759AF1F230166009D397C /* grip_001.dae in Resources */,
+				8A0759D51F230166009D397C /* SwingTrailStreakShader.fsh in Resources */,
+				8A07596C1F230165009D397C /* PPSkyPro.strings in Resources */,
+				8A07599F1F230166009D397C /* trees4_front.png in Resources */,
+				8A0759CF1F230166009D397C /* SimpleColladaShaderNoTex.fsh in Resources */,
+				8A07595A1F230165009D397C /* man_calibration_skypro@2x.png in Resources */,
+				8A0759AD1F230166009D397C /* golfball.klr in Resources */,
+				8A0759D71F230166009D397C /* TextureKernel5Shader.fsh in Resources */,
+				8A0759521F230165009D397C /* calibration_penciledit_button_ipad@2x.png in Resources */,
+				8A0759441F230165009D397C /* calibration_nocheck@2x.png in Resources */,
+				8A07593B1F230165009D397C /* calibration_divider_three@2x.png in Resources */,
+				8A07592E1F230165009D397C /* blank_wood_ipad@2x.png in Resources */,
+				8A81830A1F23A7930046D913 /* Assets.xcassets in Resources */,
+				8A0759D11F230166009D397C /* SimpleColorShader.fsh in Resources */,
+				8A0759911F230165009D397C /* putter026.ppcollada in Resources */,
+				8A81831C1F23A9E80046D913 /* SatelliteIcon.png in Resources */,
+				8A0759AB1F230166009D397C /* finalTerror66.mbin in Resources */,
+				8A07592F1F230165009D397C /* calibration_attach_35inch.png in Resources */,
+				8A0759411F230165009D397C /* calibration_iron_button_ipad@2x.png in Resources */,
+				8A07598C1F230165009D397C /* finalTerror66_tex_1.png in Resources */,
+				8A81831D1F23A9E80046D913 /* SatelliteIcon@2x.png in Resources */,
+				8A07595E1F230165009D397C /* PPCalibrationStoryboard_iPad.storyboard in Resources */,
+				8A0759501F230165009D397C /* calibration_wood_button_ipad@2x.png in Resources */,
+				8A07596D1F230165009D397C /* PPNewPutt.caf in Resources */,
+				8A07598A1F230165009D397C /* clubs_texture.png in Resources */,
+				8A0759941F230165009D397C /* cloudsFront_gradient.png in Resources */,
+				8A07595D1F230165009D397C /* PPCalibrationStoryboard.storyboard in Resources */,
+				8A0759881F230165009D397C /* Calirate_Phone014_tex_1.png in Resources */,
+				8A07594C1F230165009D397C /* calibration_rightthumb_ipad@2x.png in Resources */,
+				8A0759261F230165009D397C /* blank_iron_ipad@2x.png in Resources */,
+				8A0759391F230165009D397C /* calibration_divider_question@2x.png in Resources */,
+				8A07596F1F230165009D397C /* PPSatelliteConnected.caf in Resources */,
+				8A0759541F230165009D397C /* editbutton@2x.png in Resources */,
+				8A0759901F230165009D397C /* iron_bones_039.ppcollada in Resources */,
+				8A0759921F230165009D397C /* wood_bones_007.ppcollada in Resources */,
+				8A0759A21F230166009D397C /* Calirate065.klr in Resources */,
+				8A0759D81F230166009D397C /* TextureKernel5Shader.vsh in Resources */,
+				8A0759431F230165009D397C /* calibration_leftthumb_ipad@2x.png in Resources */,
+				8A0759B31F230166009D397C /* iron_bones_039.klr in Resources */,
+				8A0759381F230165009D397C /* calibration_divider_question.png in Resources */,
+				8A0759301F230165009D397C /* calibration_attach_35inch@2x.png in Resources */,
+				8A0759D61F230166009D397C /* SwingTrailStreakShader.vsh in Resources */,
+				8A07591D1F230165009D397C /* ManualCalibrationPromptView.xib in Resources */,
+				8A0759CD1F230166009D397C /* SimpleColladaShader.fsh in Resources */,
+				8A0759451F230165009D397C /* calibration_penciledit_ipad.png in Resources */,
+				8A0759201F230165009D397C /* arrow1_left@2x.png in Resources */,
+				8A0759D21F230166009D397C /* SimpleColorShader.vsh in Resources */,
+				8A0759A11F230166009D397C /* Calirate065.dae in Resources */,
+				8A0759241F230165009D397C /* blank_iron@2x.png in Resources */,
+				8A0759A01F230166009D397C /* trees4_middle.png in Resources */,
+				8A0759481F230165009D397C /* calibration_putter@2x.png in Resources */,
+				8A0759561F230165009D397C /* man_calibration_button@2x.png in Resources */,
+				8A0759A51F230166009D397C /* Calirate_Phone014.klr in Resources */,
+				8A0759281F230165009D397C /* blank_putter@2x.png in Resources */,
+				8A0759421F230165009D397C /* calibration_leftthumb_ipad.png in Resources */,
+				8A07593A1F230165009D397C /* calibration_divider_three.png in Resources */,
+				8A0759991F230165009D397C /* golfballmap.png in Resources */,
+				8A07594A1F230165009D397C /* calibration_putter_button_ipad@2x.png in Resources */,
+				8A0759A91F230166009D397C /* finalTerror66.dae in Resources */,
+				8A0759B91F230166009D397C /* wood_bones_007.klr in Resources */,
+				8A0759B01F230166009D397C /* grip_001.klr in Resources */,
+				8A0759B51F230166009D397C /* putter026.dae in Resources */,
+				8A07594E1F230165009D397C /* calibration_wood@2x.png in Resources */,
 				8A5713E21D21D80E000EA4F9 /* Main.storyboard in Resources */,
+				8A07592C1F230165009D397C /* blank_wood@2x.png in Resources */,
+				8A0759371F230165009D397C /* calibration_divider_one@2x.png in Resources */,
+				8A07594D1F230165009D397C /* calibration_wood.png in Resources */,
+				8A0759361F230165009D397C /* calibration_divider_one.png in Resources */,
+				8A0759961F230165009D397C /* clubs_diffuse6 copy.png in Resources */,
+				8A0759591F230165009D397C /* man_calibration_skypro.png in Resources */,
+				8A07598F1F230165009D397C /* grip_001.ppcollada in Resources */,
+				8A07598B1F230165009D397C /* finalTerror66.ppcollada in Resources */,
+				8A0759471F230165009D397C /* calibration_putter.png in Resources */,
+				8A07594F1F230165009D397C /* calibration_wood_button_ipad.png in Resources */,
+				8A0759D31F230166009D397C /* SwingTrailShader.fsh in Resources */,
+				8A0759291F230165009D397C /* blank_putter_ipad.png in Resources */,
+				8A0759951F230165009D397C /* clubs_diffuse011.png in Resources */,
+				8A0759701F230165009D397C /* PPSatelliteDisconnected.caf in Resources */,
+				8A0759861F230165009D397C /* Calirate065.ppcollada in Resources */,
+				8A0759491F230165009D397C /* calibration_putter_button_ipad.png in Resources */,
+				8A0759771F230165009D397C /* SimulatedSwing_Putt.simswing in Resources */,
+				8A07592B1F230165009D397C /* blank_wood.png in Resources */,
+				8A0759B61F230166009D397C /* putter026.klr in Resources */,
+				8A07596E1F230165009D397C /* PPNewSwing.caf in Resources */,
+				8A0759A71F230166009D397C /* ColoredSphere7.dae in Resources */,
+				8A0759341F230165009D397C /* calibration_attach_ipad@2x.png in Resources */,
+				8A0759891F230165009D397C /* clubs_diffuse011.png.png in Resources */,
+				8A0759B71F230166009D397C /* putter026.mbin in Resources */,
+				8A0759271F230165009D397C /* blank_putter.png in Resources */,
+				8A07591E1F230165009D397C /* Calibration.strings in Resources */,
+				8A0759251F230165009D397C /* blank_iron_ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,16 +1333,125 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A0759ED1F230D79009D397C /* SPPeripheralManager.m in Sources */,
+				8A0759C21F230166009D397C /* CSP3DGolfBallSceneElement.mm in Sources */,
+				8A0759C41F230166009D397C /* CSP3DStaticClubSceneElement.mm in Sources */,
+				8A0759601F230165009D397C /* PPCalibrationConfirmClubViewController.m in Sources */,
 				8A5713DF1D21D80E000EA4F9 /* ViewController.m in Sources */,
+				8A0759811F230165009D397C /* CPPGolfer.cpp in Sources */,
+				8A0759F81F2398D6009D397C /* ControlsViewController.m in Sources */,
+				8A0759C51F230166009D397C /* CSP3DSwingTrailSceneElement.cpp in Sources */,
+				8A0759C11F230166009D397C /* CSP3DClubSceneElement_old.mm in Sources */,
+				8A0759C31F230166009D397C /* CSP3DGolferSceneElement.mm in Sources */,
+				8A07595F1F230165009D397C /* PPCalibrationChooseClubTypeViewController.m in Sources */,
+				8A0759801F230165009D397C /* CPPGolfClubModel.cpp in Sources */,
+				8A0759651F230165009D397C /* PPCalibrationTroublesViewController.m in Sources */,
+				8A0759DB1F230166009D397C /* CPPSerializedSwing.cpp in Sources */,
 				8A5713E51D21D80E000EA4F9 /* SPBLEPROTO.xcdatamodeld in Sources */,
+				8A0759C01F230166009D397C /* CSP3DClubSceneElement.mm in Sources */,
+				8A0759641F230165009D397C /* PPCalibrationPrefaceViewController.m in Sources */,
+				8A0759E51F23038B009D397C /* Club.m in Sources */,
+				8A0759C71F230166009D397C /* SP3DPlaneAnnotationSceneElement.m in Sources */,
+				8A07597F1F230165009D397C /* CPPGolfBall.cpp in Sources */,
+				8A07591A1F230165009D397C /* PPClubHelper.m in Sources */,
+				8A0759DC1F230166009D397C /* PPSerializedSwing.m in Sources */,
+				8A0759851F230165009D397C /* CPPWoodModel.cpp in Sources */,
+				8A0759DD1F230166009D397C /* DeviceModelDetector.m in Sources */,
+				8A0759831F230165009D397C /* CPPPutterModel.cpp in Sources */,
+				8A0759661F230165009D397C /* PPCalibration3DAngle.m in Sources */,
+				8A0759821F230165009D397C /* CPPIronModel.cpp in Sources */,
+				8A0759BF1F230166009D397C /* CSP3DCalibrationGolferSceneElement.mm in Sources */,
+				8A0759681F230165009D397C /* PPClubSelectionScrollView.m in Sources */,
+				8A0759841F230165009D397C /* CPPSurfaceLevel.cpp in Sources */,
+				8A07595C1F230165009D397C /* ManualCalibrationPromptView.m in Sources */,
+				8A0759671F230165009D397C /* PPCalibrationMotionFeedbackView.m in Sources */,
+				8A07597B1F230165009D397C /* SPSensorCalibrator.m in Sources */,
+				8A0759BE1F230166009D397C /* CSP3DAnnotationSceneElement.cpp in Sources */,
 				8A5713DC1D21D80E000EA4F9 /* AppDelegate.m in Sources */,
+				8A07591C1F230165009D397C /* PPCalibrationController.m in Sources */,
 				8A5713D91D21D80E000EA4F9 /* main.m in Sources */,
+				8A07597E1F230165009D397C /* CPPCalibrationGolfer.cpp in Sources */,
+				8A0759C91F230166009D397C /* CSP3DGolfSceneEnvironment.cpp in Sources */,
+				8A0759C81F230166009D397C /* SP3DSceneElementWrappers.mm in Sources */,
+				8A0759BD1F230166009D397C /* PPSwingTrailPutt.cpp in Sources */,
+				8A0759E61F23038B009D397C /* Swing.m in Sources */,
+				8A0759631F230165009D397C /* PPCalibrationMotionGuideViewController.mm in Sources */,
+				8A0759BB1F230166009D397C /* PPSwingTrail.cpp in Sources */,
+				8A0759CA1F230166009D397C /* SP3DGolfSceneEnvironment.mm in Sources */,
+				8A07591B1F230165009D397C /* PPCalibrationAcquisitionViewController.m in Sources */,
+				8A0759C61F230166009D397C /* SP3DAnnotationSceneElement.m in Sources */,
+				8A07597D1F230165009D397C /* SP3DGolfSceneController.m in Sources */,
+				8A0759BC1F230166009D397C /* PPSwingTrailFull.cpp in Sources */,
+				8A0759E41F23038B009D397C /* Satellite.m in Sources */,
+				8A0759611F230165009D397C /* PPCalibrationInfoViewController.m in Sources */,
+				8A0759621F230165009D397C /* PPCalibrationModifyClubViewController.m in Sources */,
+				8A0759781F230165009D397C /* PPEventNotificationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8A0757FD1F230165009D397C /* ManualCalibrationPromptView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0757FE1F230165009D397C /* da */,
+				8A0758011F230165009D397C /* de */,
+				8A0758021F230165009D397C /* en */,
+				8A0758031F230165009D397C /* es */,
+				8A0758041F230165009D397C /* fi */,
+				8A0758051F230165009D397C /* fr */,
+				8A07584A1F230165009D397C /* ja */,
+				8A07584D1F230165009D397C /* nl */,
+				8A0758501F230165009D397C /* zh-Hans-CN */,
+			);
+			name = ManualCalibrationPromptView.xib;
+			sourceTree = "<group>";
+		};
+		8A0757FF1F230165009D397C /* Calibration.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0758001F230165009D397C /* de */,
+			);
+			name = Calibration.strings;
+			sourceTree = "<group>";
+		};
+		8A0758391F230165009D397C /* calibration_penciledit_button_ipad.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A07583A1F230165009D397C /* de */,
+				8A07583F1F230165009D397C /* en */,
+				8A0758411F230165009D397C /* fr */,
+			);
+			name = calibration_penciledit_button_ipad.png;
+			sourceTree = "<group>";
+		};
+		8A07583B1F230165009D397C /* calibration_penciledit_button_ipad@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A07583C1F230165009D397C /* de */,
+				8A0758401F230165009D397C /* en */,
+				8A0758421F230165009D397C /* fr */,
+			);
+			name = "calibration_penciledit_button_ipad@2x.png";
+			sourceTree = "<group>";
+		};
+		8A07586F1F230165009D397C /* PPSkyPro.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0758701F230165009D397C /* da */,
+				8A0758711F230165009D397C /* de */,
+				8A0758721F230165009D397C /* en */,
+				8A0758731F230165009D397C /* es */,
+				8A0758741F230165009D397C /* fi */,
+				8A0758751F230165009D397C /* fr */,
+				8A0758761F230165009D397C /* ja */,
+				8A0758771F230165009D397C /* nl */,
+				8A0758831F230165009D397C /* zh-Hans-CN */,
+			);
+			name = PPSkyPro.strings;
+			sourceTree = "<group>";
+		};
 		8A5713E01D21D80E000EA4F9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -270,11 +1559,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SZY74N5AYA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SkyProKit/SkyProKit/GolfSwingKit",
+					"$(PROJECT_DIR)/SkyProKit/SkyProKit/PPCommon",
+					"$(PROJECT_DIR)/SkyProKit/SkyProKit/SatelliteLibrary",
+					"$(PROJECT_DIR)/SkyProKit/SkyProKit/SP3D",
+				);
 				INFOPLIST_FILE = SPBLEPROTO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ppg.SPBLEPROTO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -285,11 +1587,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SZY74N5AYA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SkyProKit/SkyProKit/GolfSwingKit",
+					"$(PROJECT_DIR)/SkyProKit/SkyProKit/PPCommon",
+					"$(PROJECT_DIR)/SkyProKit/SkyProKit/SatelliteLibrary",
+					"$(PROJECT_DIR)/SkyProKit/SkyProKit/SP3D",
+				);
 				INFOPLIST_FILE = SPBLEPROTO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ppg.SPBLEPROTO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

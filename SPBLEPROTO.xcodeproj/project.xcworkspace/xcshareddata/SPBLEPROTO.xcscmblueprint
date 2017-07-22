@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "76E5A68A199C32B559A749EEBCFF7D85621E75BB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "76E5A68A199C32B559A749EEBCFF7D85621E75BB" : 9223372036854775807,
+    "B79E8F30EEA6F95C1B09B703FA752B5538274775" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DC6DBFEA-6EA9-49A9-96CE-996DA73E25EC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "76E5A68A199C32B559A749EEBCFF7D85621E75BB" : "SPBleProto\/",
+    "B79E8F30EEA6F95C1B09B703FA752B5538274775" : "SPBleProto\/SkyProKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SPBLEPROTO",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SPBLEPROTO.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:PocketPro\/SPBleProto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "76E5A68A199C32B559A749EEBCFF7D85621E75BB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:PocketPro\/SkyProKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B79E8F30EEA6F95C1B09B703FA752B5538274775"
+    }
+  ]
+}

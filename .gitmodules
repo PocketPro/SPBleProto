@@ -1,0 +1,3 @@
+[submodule "SkyProKit"]
+	path = SkyProKit
+	url = git@github.com:PocketPro/SkyProKit.git

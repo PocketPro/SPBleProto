@@ -123,6 +123,7 @@
     [self.peripheralManager addService:transferService];
 }
 
+
 /** Start advertising
  */
 - (IBAction)switchChanged:(id)sender
