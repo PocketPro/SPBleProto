@@ -13,7 +13,9 @@
 //   2) Add it to the service in the init method,
 //   3) Pull its value from the swing object in dataForUUID:
 
+
 // Full Swing Service
+// NB: UDIDs Must be LOWERCASE
 #define SP_UDID_FULL_SWING_SERVICE      @"c913b920-0351-4493-bc47-df1f5b4914dd"
 #define SP_UDID_FULL_SWING_TIMESTAMP            @"eac79057-6afa-4214-9869-98d2467b6512"
 #define SP_UDID_FULL_SWING_UUID_MS              @"23e8619c-4fcc-48d1-ab0c-be108f234751"
@@ -39,10 +41,11 @@
 
 
 // Putt Service
+// NB: UDIDs Must be LOWERCASE
 #define SP_UDID_PUTT_SERVICE           @"83dacba2-f440-44fd-9bde-8dd0173f2c1c"
 #define SP_UDID_PUTT_TIMESTAMP                  @"747afc12-592c-4b2b-a9bd-eb48cba35544"
-#define SP_UDID_PUTT_SWING_UUID_MS              @"B026FA13-6738-4C35-AA0F-AD904169B6FA"
-#define SP_UDID_PUTT_SWING_UUID_LS              @"44E2C380-2ADD-4F57-B717-2525FCE9A2BE"
+#define SP_UDID_PUTT_SWING_UUID_MS              @"b026fa13-6738-4c35-aa0f-ad904169b6fa"
+#define SP_UDID_PUTT_SWING_UUID_LS              @"44e2c380-2add-4f57-b717-2525fce9a2be"
 #define SP_UDID_PUTT_SWING_TEMPO                @"9756916f-c416-4592-9161-ea7fa5197efd"
 #define SP_UDID_PUTT_HEAD_SPEED                 @"ec29686c-6350-49a8-bdb6-eb953fab28af"
 #define SP_UDID_PUTT_LENGTH_TOP                 @"63a0343b-c195-4150-9827-d4e295095fc3"
@@ -103,7 +106,7 @@
         _swingSetDate = [NSDate date];
         
         // Update timestamp fields
-        if (self.underlyingManager.isAdvertising){
+        if (self.underlyingManager.isAdvertising && swing.handle){
             GSClub_t club = GSGetClub(swing.handle);
             if (club.type == GSClubTypePutter){
                 [self.underlyingManager updateValue:[self dataForUUIDString:SP_UDID_PUTT_TIMESTAMP]
@@ -113,6 +116,8 @@
                 [self.underlyingManager updateValue:[self dataForUUIDString:SP_UDID_FULL_SWING_TIMESTAMP]
                                   forCharacteristic:[self.charateristics objectForKey:SP_UDID_FULL_SWING_TIMESTAMP]
                                onSubscribedCentrals:nil];
+                
+                [self.underlyingManager updateValue:[self dataForUUIDString:SP_UDID_SHAFT_LEAN_ADDRESS] forCharacteristic:[self.charateristics objectForKey:SP_UDID_SHAFT_LEAN_ADDRESS] onSubscribedCentrals:nil];
             }
         }
     }
@@ -120,14 +125,19 @@
 
 - (NSData *)dataForParameterKey:(GSParameterKey_t)key{
     GSParameter_t param = GSGetParameterForKey(self.swing.handle, key);
-    return [NSData dataWithBytes:&(param.value) length:sizeof(param.value)];
+    if (param.status == GSSuccess) {
+        return [NSData dataWithBytes:&(param.value) length:sizeof(param.value)];
+    } else {
+        return nil;
+    }
 }
 
-- (NSData *)dataForUUIDString:(NSString *)uuid {
-    if (!self.swing || !uuid) {
+- (NSData *)dataForUUIDString:(NSString *)uuidIN {
+    if (!self.swing || !uuidIN) {
         return nil;
     }
     
+    NSString *uuid = [uuidIN lowercaseString];
     
     // Full Swing
     if ([uuid isEqualToString:SP_UDID_FULL_SWING_TIMESTAMP]){
@@ -193,17 +203,17 @@
     return nil;
 }
 
-- (CBCharacteristic *)charWithTypeString:(NSString *)strType value:(float)value{
-    CBMutableCharacteristic *characteristic= [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:strType] properties:CBCharacteristicPropertyRead value:[NSData dataWithBytes:&value length:sizeof(float)] permissions:CBAttributePermissionsReadable];
-    return characteristic;
+- (void)addCharacteristicWithTypeString:(NSString *)strType toDictionary:(NSMutableDictionary *)dict {
+    [self addCharacteristicWithTypeString:strType toDictionary:dict properties:CBCharacteristicPropertyRead];
 }
 
-- (void)addCharacteristicWithTypeString:(NSString *)strType toDictionary:(NSMutableDictionary *)dict {
+- (void)addCharacteristicWithTypeString:(NSString *)strType toDictionary:(NSMutableDictionary *)dict properties:(CBCharacteristicProperties)properties {
     // Passing in "nil" for value will cause the central manager to ask its delegate (this object) for the value.
-    CBMutableCharacteristic *characteristic= [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:strType] properties:CBCharacteristicPropertyRead value:nil permissions:CBAttributePermissionsReadable];
+    CBMutableCharacteristic *characteristic= [[CBMutableCharacteristic alloc] initWithType:[CBUUID UUIDWithString:strType] properties:properties value:nil permissions:CBAttributePermissionsReadable];
     
     [dict setObject:characteristic forKey:strType];
 }
+
 
 - (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheralManager {
     // Opt out from any other state
@@ -220,7 +230,7 @@
     
     // Full swing
     [self addCharacteristicWithTypeString:SP_UDID_CLUBHEAD_SPEED toDictionary:chars];
-    [self addCharacteristicWithTypeString:SP_UDID_FULL_SWING_TIMESTAMP toDictionary:chars];
+    [self addCharacteristicWithTypeString:SP_UDID_FULL_SWING_TIMESTAMP toDictionary:chars properties:CBCharacteristicPropertyRead | CBCharacteristicPropertyNotify];
     [self addCharacteristicWithTypeString:SP_UDID_HAND_SPEED toDictionary:chars];
     [self addCharacteristicWithTypeString:SP_UDID_FULL_SWING_UUID_LS toDictionary:chars];
     [self addCharacteristicWithTypeString:SP_UDID_FULL_SWING_UUID_LS toDictionary:chars];

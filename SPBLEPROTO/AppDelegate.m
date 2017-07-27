@@ -25,6 +25,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    // Create the clubs used in this sample app
+    self.clubs = [self defaultClubs];
+    
     // Create & configure Satellite Manager
     PPSatelliteManager *manager = [PPSatelliteManager sharedManager];
     [manager setDelegate:self];
@@ -42,6 +45,11 @@
     // Specify that we will be using OpenGL ES 2.0
     [[EAGLContextManager sharedManager] setCurrentAPI:kEAGLRenderingAPIOpenGLES2];
     
+    // Set some default appearances
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.84 green:0.34 blue:0 alpha:1.0]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+
     return YES;
 }
 
