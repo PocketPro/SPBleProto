@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="412" y="362"/>
+            <point key="canvasLocation" x="-390" y="501"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cdT-3U-lAQ">
@@ -57,6 +57,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="uap-Dt-BTu" kind="relationship" relationship="viewControllers" id="P8X-OO-dP1"/>
+                        <segue destination="MRj-I1-kHR" kind="relationship" relationship="viewControllers" id="xgS-hl-v4T"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2T-cI-sBF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -143,7 +144,7 @@
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FD2-Ts-SJi" id="ARO-L3-EN5">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Menu Label" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nF2-yB-1cb">
@@ -167,7 +168,7 @@
                                         <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zAq-pc-wJG" id="6t5-LZ-V1p">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="MJn-KJ-UIo">
@@ -220,7 +221,7 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Control" image="SatelliteIcon.png" id="3kU-7I-Lg2"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="showDebugSatelliteControlItems" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showDebugSatelliteControlItems" value="NO"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hideDFUControlItem" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -234,8 +235,85 @@
             </objects>
             <point key="canvasLocation" x="216" y="-1035"/>
         </scene>
+        <!--Second-->
+        <scene sceneID="HQD-6R-HEE">
+            <objects>
+                <viewController title="Second" id="MRj-I1-kHR" customClass="SwingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6xd-o1-hCi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nz2-V0-S4i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2K7-YQ-Aac">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ready" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukh-vL-86W">
+                                <rect key="frame" x="32" y="453" width="257" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="d7i-qP-NI8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="cBL-hw-IF9">
+                                <rect key="frame" x="150" y="463" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wom-lV-f1S" userLabel="Scene View" customClass="EAGLView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="379"/>
+                                <color key="backgroundColor" red="0.72660048730000004" green="0.89245854589999996" blue="0.73574122799999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoa-LY-7U5">
+                                <rect key="frame" x="0.0" y="433" width="91" height="30"/>
+                                <state key="normal" title="Reset Sensor"/>
+                                <connections>
+                                    <action selector="resetSensorTapped:" destination="MRj-I1-kHR" eventType="touchUpInside" id="k69-vG-nML"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmU-Jo-tiE" userLabel="Timeline View" customClass="EAGLView">
+                                <rect key="frame" x="0.0" y="378" width="320" height="56"/>
+                                <color key="backgroundColor" red="0.94839262960000004" green="0.59544873239999996" blue="0.14972887930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="TYl-2h-bbo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ukh-vL-86W" firstAttribute="top" secondItem="EmU-Jo-tiE" secondAttribute="bottom" constant="19" id="0h7-Oa-z1W"/>
+                            <constraint firstItem="uoa-LY-7U5" firstAttribute="top" secondItem="EmU-Jo-tiE" secondAttribute="bottom" constant="-1" id="6uk-ce-21g"/>
+                            <constraint firstItem="cBL-hw-IF9" firstAttribute="centerX" secondItem="ukh-vL-86W" secondAttribute="centerX" id="94t-W3-61P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EmU-Jo-tiE" secondAttribute="trailing" constant="-20" id="Dof-yJ-qiK"/>
+                            <constraint firstItem="cBL-hw-IF9" firstAttribute="centerY" secondItem="ukh-vL-86W" secondAttribute="centerY" id="J5E-0q-8eg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Wom-lV-f1S" secondAttribute="leading" constant="20" id="Qsz-17-P6L"/>
+                            <constraint firstItem="EmU-Jo-tiE" firstAttribute="top" secondItem="Wom-lV-f1S" secondAttribute="bottom" id="VPh-xh-2Cu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uoa-LY-7U5" secondAttribute="leading" constant="20" id="YeU-ul-a33"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ukh-vL-86W" secondAttribute="trailing" constant="31" id="dhL-jc-oln"/>
+                            <constraint firstItem="ukh-vL-86W" firstAttribute="leading" secondItem="2K7-YQ-Aac" secondAttribute="leadingMargin" constant="32" id="f1N-zl-s2c"/>
+                            <constraint firstItem="Wom-lV-f1S" firstAttribute="top" secondItem="6xd-o1-hCi" secondAttribute="bottom" constant="-20" id="gAg-7Y-psD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wom-lV-f1S" secondAttribute="trailing" constant="-20" id="gYd-JK-Dq9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="EmU-Jo-tiE" secondAttribute="leading" constant="20" id="nOz-95-E8K"/>
+                            <constraint firstItem="Nz2-V0-S4i" firstAttribute="top" secondItem="EmU-Jo-tiE" secondAttribute="bottom" constant="200" id="nrz-lM-eGh"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="Swing VIew" image="golfer-icon.png" id="ejM-hb-zEJ"/>
+                    <connections>
+                        <outlet property="sceneView" destination="Wom-lV-f1S" id="6AA-Go-PIp"/>
+                        <outlet property="statusLabel" destination="ukh-vL-86W" id="VTw-dE-3bE"/>
+                        <outlet property="timelineView" destination="EmU-Jo-tiE" id="kMt-HO-x7M"/>
+                        <outlet property="transferringIndicator" destination="cBL-hw-IF9" id="x6J-gJ-MVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Blx-Yw-A0U" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.625" y="-312.67605633802816"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SatelliteIcon.png" width="23" height="30"/>
+        <image name="golfer-icon.png" width="30" height="30"/>
     </resources>
 </document>

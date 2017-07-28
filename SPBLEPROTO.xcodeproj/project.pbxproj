@@ -228,6 +228,7 @@
 		8A81831B1F23A9E80046D913 /* golfer-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A8183181F23A9E80046D913 /* golfer-icon@2x.png */; };
 		8A81831C1F23A9E80046D913 /* SatelliteIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A8183191F23A9E80046D913 /* SatelliteIcon.png */; };
 		8A81831D1F23A9E80046D913 /* SatelliteIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A81831A1F23A9E80046D913 /* SatelliteIcon@2x.png */; };
+		8AD3CE881F2B865D00D5E307 /* SwingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3CE871F2B865D00D5E307 /* SwingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -528,6 +529,8 @@
 		8A8183181F23A9E80046D913 /* golfer-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "golfer-icon@2x.png"; sourceTree = "<group>"; };
 		8A8183191F23A9E80046D913 /* SatelliteIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SatelliteIcon.png; sourceTree = "<group>"; };
 		8A81831A1F23A9E80046D913 /* SatelliteIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SatelliteIcon@2x.png"; sourceTree = "<group>"; };
+		8AD3CE861F2B865D00D5E307 /* SwingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwingViewController.h; sourceTree = "<group>"; };
+		8AD3CE871F2B865D00D5E307 /* SwingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1074,6 +1077,8 @@
 				8A0759F71F2398D6009D397C /* ControlsViewController.m */,
 				8A0759EB1F230D79009D397C /* SPPeripheralManager.h */,
 				8A0759EC1F230D79009D397C /* SPPeripheralManager.m */,
+				8AD3CE861F2B865D00D5E307 /* SwingViewController.h */,
+				8AD3CE871F2B865D00D5E307 /* SwingViewController.m */,
 				8A5713E01D21D80E000EA4F9 /* Main.storyboard */,
 				8A8183091F23A7930046D913 /* Assets.xcassets */,
 				8A81831E1F23A9EC0046D913 /* Images */,
@@ -1358,6 +1363,7 @@
 				8A0759851F230165009D397C /* CPPWoodModel.cpp in Sources */,
 				8A0759DD1F230166009D397C /* DeviceModelDetector.m in Sources */,
 				8A0759831F230165009D397C /* CPPPutterModel.cpp in Sources */,
+				8AD3CE881F2B865D00D5E307 /* SwingViewController.m in Sources */,
 				8A0759661F230165009D397C /* PPCalibration3DAngle.m in Sources */,
 				8A0759821F230165009D397C /* CPPIronModel.cpp in Sources */,
 				8A0759BF1F230166009D397C /* CSP3DCalibrationGolferSceneElement.mm in Sources */,
