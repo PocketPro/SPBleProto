@@ -37,7 +37,7 @@
     [manager setSensorCalibrationCoordinator:[SPSensorCalibrator sharedCalibrator]];
     
     // Optionally add a simulated device (or two)...
-     [manager addSimulatedSession];
+//     [manager addSimulatedSession];
     
     // Start the manager listening for connected devices to manage
     [manager startListening];
